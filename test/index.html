@@ -61,35 +61,19 @@ bottom:30px;
 </div>
 
 <script>
-
 var file = document.querySelector('.file');/*获取到了文件表单元素*/
-
 /*选择文件后触发*/
-
 file.onchange = function () {
-
 /*初始化了一个文件读取对象*/
-
 var reader = new FileReader();
-
 /*读取文件数据  this.files[0] 文件表单元素选择的第一个文件 */
-
 reader.readAsDataURL(this.files[0]);
-
 /* 加载 */
-
 reader.onload = function () {
-
     /*读取完成显示图片*/
-
     console.log(this.result);
-
 document.querySelector('#img').src = this.result;
-
- 
-
 }
-
 }
 
 </script>
