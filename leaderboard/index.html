@@ -1,0 +1,106 @@
+ <!DOCTYPE html>
+<html>
+  
+  <head>
+  
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>1st Anti-UAV Challenge</title>
+    <meta name="description" content="Catch UAVs that Watch You ---">
+	
+    <!--Open Graph Related Stuff-->
+    <meta property="og:title" content="1st Anti-UAV Challenge" />
+    <meta property="og:url" content="https://Anti-UAV.github.io/" />
+    <meta property="og:description" content="Catch UAVs that Watch You ---" />
+    <meta property="og:site_name" content="Anti-UAV" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:url" content="" />
+	
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css" media="screen,projection">
+	
+  </head>
+  
+  <body>
+  
+    <!-- <div class="top-strip"></div> -->
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/"></a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+            <li><a href="/">Introduction</a></li>
+            <li><a href="/dates">Important Dates</a></li>
+            <li><a href="/speakers">Invited Speakers</a></li>
+            <li><a href="/dataset">Dataset</a></li>
+            <li><a href="/submission">Submission</a></li>
+            <li><a href="/leaderboard">Leaderboard</a></li>
+            <li><a href="/organizers">Main Organizers</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+	
+    <div class="container">
+      <div class="page-content">
+        
+		<p><br /></p>
+		  
+        <div class="row">
+          <div class="col-xs-12">
+            <center>
+              <h1><b>Catch UAVs that Watch You:</b></h1>
+            </center>
+            <center>
+              <h2>Detection and Tracking of Unmanned Aerial Vehicle (UAV) in the Wild and the 1<sup>st</sup> Anti-UAV Challenge</h2></center>
+            <br />
+		  </div>
+        </div>
+		
+        <hr />
+		
+        <div class="row" id="dataset">
+          <div class="col-xs-12">
+            <h2><b>Metrics</b></h2>
+            <p><b>Example1:</b>We use four metrics from common semantic segmentation and scene parsing evaluations that are variations on pixel accuracy and region intersection over union (IU).
+               The four metrics are <font style="text-decoration: underline;">Pixel accuracy(%)</font> , <font style="text-decoration: underline;">Mean accuracy(%)</font>, <font style="text-decoration: underline;">Mean IoU(%)</font> and <font style="text-decoration: underline;">Frequency weighted IoU(%)</font>.</p>
+            <p></p>
+			<p><b>Example2:</b> Based on two basic weakly-correlated measures are chosen:
+			  <ul>
+			    <li>Accuracy:Overlap between the ground-truth and predicted by a tracker.</li>
+				<li>Robustness:Counts the number of times the tracker failed and had to be reinitialized.</li>
+			  </ul>
+			  <p>Rand trackers for accuracy and robustness separately on each attribute subset.</p>
+			  <p>Average ranking over the attributes.</p>
+			  <p>Giving equal weight to each performance measure we average the two corresponding rankings.</p>
+			</p>
+		  </div>
+        </div>
+        
+        <p><br /></p>
+		
+        <div class="row" id="leaderboard">
+          <div class="col-xs-12">
+            <h2><b>Ranking</b></h2>
+            <p>All teams with successful submissions have a placeholder in the leaderboard, and the results of all teams will be released on <a style="color:red;font-weight:bold;">May 8th 2020</a>. The winner of the challenge is the team with maximal numbers of top-1 ranking among all the five metrics. </p>
+          </div>
+        </div>	
+
+        <p><br /></p>
+
+	  </div>
+    </div>
+    <script type="text/javascript" src="/static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+  </body>
+
+</html>
