@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>文件上传测试</title>
+</head>
+ 
+<style type="text/css">
+	#content_div{
+   	position:absolute;
+		left:0px;
+		top:0px;
+		right:0px;
+		bottom:0px;
+		text-align:center
+  }
+  
+  .upload_dialog_div{
+  position:fixed;
+	left:0px;
+	right:0px;
+	top:0px;
+	bottom:0px;
+	overflow:auto; 
+	visibility:hidden;
+	background-color: rgba(60,60,60,0.5);
+	z-index:99;
+  }
+  .style_content_div{
+  position:relative;
+  margin:auto;
+  margin-top:160px;
+	width:400px;
+	height:160px;
+	background:#F5F5DC;
+  }
+  .style_content_upper_div{
+  position:absolute;
+  left:0px;
+  top:0px;
+	width:400px;
+	height:100px;
+	background:#F5F5DC;
+  }
+  .style_content_lower_div{
+  position:absolute;
+  left:0px;
+  top:100px;
+	width:400px;
+	height:60px;
+	background:#F5FFDC;
+  }
+  
+  .style_content_file_div{
+  position:absolute;
+  left:15px;
+  top:20px;
+	width:380px;
+	height:60px;
+  }
+  .style_file_span{
+	  float:left;
+	  width:120px;
+	  height:36px;
+	  font-size:24px;
+	  text-align:right;
+  }
+  .style_file_content{
+	  margin-top:5px;
+  }
+  .style_content_prog_div{
+  position:absolute;
+  left:18px;
+  top:57px;
+	width:360px;
+	height:40px;
+  }
+  .style_prog_span_hit{
+	  color:#ff0000;
+  }
+  .style_prog_content{
+	  width:360px;
+	  visibility:hidden;
+  }
+  .style_content_span{
+  width:200px;
+	height:60px;
+	line-height:60px;
+	display:inline-block;
+	float:left;
+	font-size:32px;
+	text-align:center;
+	cursor: pointer;
+  }
+ 
+  .style_copyright_a{
+	text-decoration:none;
+	color:#cc00cc;
+  }
+</style>
+<script>
+function createHttpRequest()
+ {
+	 var xmlHttp=null;
+     try{
+ 	    // Firefox, Opera 8.0+, Safari
+ 	    xmlHttp=new XMLHttpRequest();
+ 	 }catch (e){
+ 	    // Internet Explorer
+ 		try{
+ 	        xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+ 	    }catch (e){
+ 		try{
+ 		    xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+ 	        }catch (e){
+ 	            alert("您的浏览器不支持AJAX！");
+ 	        }
+ 	    }
+ 	}
+    return xmlHttp;
+ }
+ 
+ function uploadFileToServer(){
+	var uploadFile = document.getElementById("upload_file_id");
+	var uploadTip = document.getElementById("upload_tip_id");
+	var uploadProgress = document.getElementById("upload_progress_id");
+	
+	if(uploadFile.value==""){
+		 uploadTip.innerText="请选择一个文件";
+	}else if(uploadFile.files[0].size>1024 &&uploadFile.files[0].size<(40*1024*1024)){ 
+		try{
+			if(window.FileReader){
+				var fReader = new FileReader();
+				var xhreq=createHttpRequest();
+				 xhreq.onreadystatechange=function(){
+					 if(xhreq.readyState==4){
+						if(xhreq.status==200){
+							 uploadTip.innerText="文件上传成功";
+							 setTimeout(function(){
+								hideUploadDialog()
+							},2000);	//2秒后隐藏
+						}else{
+							uploadTip.innerText="文件上传失败了";
+						}	
+					 }
+				 }
+				fReader.οnlοad=function(e){
+					 xhreq.open("POST","/upload/file",true);
+					 xhreq.setRequestHeader("Content-type", "application/octet-stream"); //流类型
+					 xhreq.setRequestHeader("Content-length", fwFile.files[0].size);     //文件大小
+					 xhreq.setRequestHeader("uploadfile_name", encodeURI(fwFile.files[0].name)); //兼容中文
+					 xhreq.send(fReader.result);
+				}
+				fReader.onprogress = function(e){
+					 uploadProgress.value = e.loaded*100/e.total;
+				}
+				fReader.readAsArrayBuffer(uploadFile.files[0]);
+				uploadProgress.style.visibility="visible";
+				uploadProgress.value = 0;
+			}else{
+				uploadTip.innerText="浏览器不支持上传文件";
+			}			
+		}catch(e){
+			 uploadTip.innerText="文件上传失败";
+		}
+	}else{
+		  uploadTip.innerText="文件不符合要求";
+	}
+}
+ function showUploadDialog(){
+	var up_dialog=document.getElementById("upload_dialog");
+  document.getElementById("upload_tip_id").innerText="请选择要上传的文件";
+  document.getElementById("upload_progress_id").style.visibility="hidden";
+	up_dialog.style.visibility="visible";
+	
+ }
+ function hideUploadDialog(){
+	var up_dialog=document.getElementById("upload_dialog");
+	document.getElementById("upload_progress_id").style.visibility="hidden";
+	up_dialog.style.visibility="hidden";
+ }
+</script>
+<body>
+   <div id="content_div">
+   	  <br>
+   	  <br>
+   	  <br>
+   	  <br>
+   	  <br>
+   	  <a class="style_copyright_a" href="javascript:void(0);" οnclick="showUploadDialog()">上传新文件</a>
+   </div>
+   
+   <div id="upload_dialog" class="upload_dialog_div"> 
+   	    <div class="style_content_div">
+  	  	  <div class="style_content_upper_div">
+  	  	  	  <div class="style_content_file_div">
+  	  	  	  	 <span class="style_file_span"> 文件路径：</span>
+  	  	  	  	 <input class="style_file_content" type="file" id="upload_file_id"/>
+  	  	  	  </div>
+  	  	  	  <div class="style_content_prog_div">
+  	  	  	  	 <span class="style_prog_span_hit" id="upload_tip_id"> 请选择要上传的文件 </span>
+  	  	  	     <progress class="style_prog_content" id="upload_progress_id" value="0" max="100"></progress> 
+  	  	  	  </div>
+  	  	  </div>
+  	  	  <div class="style_content_lower_div">
+  	  	  	   <span class="style_content_span" οnmοuseοver="this.style.background='#cccccc'" οnmοuseοut="this.style.background=''" οnclick="hideUploadDialog()">取消</span>
+  	  	  	   <span class="style_content_span" οnmοuseοver="this.style.background='#F5CCDC'" οnmοuseοut="this.style.background=''" οnclick="uploadFileToServer()">确定</span>
+  	  	  </div>
+  	  </div>
+   </div>
+</body>
+</html>
