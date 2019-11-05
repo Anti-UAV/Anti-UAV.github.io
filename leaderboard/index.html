@@ -71,9 +71,21 @@
         <div class="row" id="dataset">
           <div class="col-xs-12">
             <h2><b>Metrics</b></h2>
-            <p>We use four metrics from common semantic segmentation and scene parsing evaluations that are variations on pixel accuracy and region intersection over union (IU).
+            <p><b>Example1:</b>We use four metrics from common semantic segmentation and scene parsing evaluations that are variations on pixel accuracy and region intersection over union (IU).
                The four metrics are <font style="text-decoration: underline;">Pixel accuracy(%)</font> , <font style="text-decoration: underline;">Mean accuracy(%)</font>, <font style="text-decoration: underline;">Mean IoU(%)</font> and <font style="text-decoration: underline;">Frequency weighted IoU(%)</font>.</p>
-          </div>
+            <p></p>
+			<p><b>Example2:</b> Based on two basic weakly-correlated measures are chosen:
+			  <ul>
+			    <li>Accuracy:Overlap between the ground-truth and predicted by a tracker.</li>
+				<li>Robustness:Counts the number of times the tracker failed and had to be reinitialized.</li>
+			  </ul>
+			  <ul>
+			    <li>1. Rand trackers for accuracy and robustness separately on each attribute subset.</li>
+			    <li>2. Average ranking over the attributes.</li>
+			    <li>3. Giving equal weight to each performance measure we average the two corresponding rankings.</li>
+			  </ul>
+			</p>
+		  </div>
         </div>
         
         <p><br /></p>
@@ -84,7 +96,7 @@
             <p>All teams with successful submissions have a placeholder in the leaderboard, and the results of all teams will be released on <a style="color:red;font-weight:bold;">May 8th 2020</a>. The winner of the challenge is the team with maximal numbers of top-1 ranking among all the five metrics. </p>
           </div>
         </div>	
-  
+
         <p><br /></p>
 
 	  </div>
