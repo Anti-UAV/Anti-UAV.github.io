@@ -208,7 +208,7 @@ pre {
   font-weight: normal;
   color: #838379;
 }
-.member-name::after, .member-name2::after, .member-name3::after, .member-name5::after {
+.member-name2::after, .member-name2::after, .member-name3::after, .member-name5::after {
   content: "";
   display: table;
   margin: 1.5em auto;
