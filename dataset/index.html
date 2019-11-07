@@ -92,7 +92,7 @@
             <p><b>2. UAV Dataset Scene and Model:</b></p>
 			<p>   "Big", "Middle", "Small", "Day", "Night", "Cloud", "Building", "False Object", "Speed Change", "Hang", "Occlusion", "Scale Variation".</p>
 			<p></p>
-			<center><div class="col-md-12"><img src="data_01.png" /></div></center>
+			<div class="col-md-12"><center><img src="data_01.png" /></center></div>
 			<p><br/></p>
             <p><b>3. File Tree Diagram </b></p>
 			<ul>
@@ -139,7 +139,7 @@
 			</ul>
             <p>Infrared has 30 videos, RGB has 32 videos.(Infrared and RGB are the same, and can be merged if necessary.)</p>
 			<div class="col-md-12"><img src="data_02.png" /></div>
-			<p><br/></p>
+			<p><br/><br/></p>
 			<p><b>4. Division Rules</b></p>
 			<p><b>Test set:</b> Select all data files involved in "false object", do not participate in training, mainly for verification.</p>
 			<p><b>Validation set:</b> According to the ratio of 3:7 randomly divided the remaining data, classification on the scene of "big", "middle", "small", "day" and "night", right in the file data according to the number of different distribution division (for example, big UAVs-day have 50, big UAVs-night are 20, if needs in extraction of 20 UAVs, day:night = 14:6), as far as possible to disrupt the same video data sequence.</p>
