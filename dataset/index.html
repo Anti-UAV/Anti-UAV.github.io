@@ -89,9 +89,10 @@
 			</ul>
 			<p></p>
 			<!-- 大 中 小 白天 夜晚 云层 楼宇 虚假目标 速度变化悬停 遮挡 尺度变化 -->
-            <p><b>2. UAV Dataset Scene and Model:</b>"big", "middle", "small", "day", "night", "cloud cover", "building", "false target", "speed change hover", "occlusion", "scale change".</p>
+            <p><b>2. UAV Dataset Scene and Model:</b></p>
+			<p>   "big", "middle", "small", "day", "night", "cloud cover", "building", "false target", "speed change hover", "occlusion", "scale change".</p>
 			<p></p>
-            <p><b>3. File Tree Diagram (infrared and visible light are the same, and can be merged if necessary)</b></p>
+            <p><b>3. File Tree Diagram </b></p>
 			<ul>
 			  <li>UAV_Label_Infrared
 			    <ul>
@@ -134,13 +135,13 @@
 				</ul>
 			  </li>
 			</ul>
-            <p>Infrared has 30 videos, visible light has 32 videos.</p>
+            <p>Infrared has 30 videos, visible light has 32 videos.(Infrared and visible light are the same, and can be merged if necessary)</p>
 			<p></p>
 			<p><b>4. Division Rules</b></p>
-			<p>Test set: Select all data files involved in "false target", do not participate in training, mainly for verification.</p>
-			<p>Validation set: According to the ratio of 3:7 randomly divided the remaining data, classification on the scene of "big", "middle", "small", "day" and "night", right in the file data according to the number of different distribution division (for example, big UAVs-day have 50, big UAVs-night are 20, if needs in extraction of 20 UAVs, day:night = 14:6), as far as possible to disrupt the same video data sequence.</p>
-			<p>Train set: Data other than validation set.</p>
-			<p>The final partition ratio is: Train set: Validation set: Test set =5:2:3.</p>
+			<p><b>Test set:</b> Select all data files involved in "false target", do not participate in training, mainly for verification.</p>
+			<p><b>Validation set:</b> According to the ratio of 3:7 randomly divided the remaining data, classification on the scene of "big", "middle", "small", "day" and "night", right in the file data according to the number of different distribution division (for example, big UAVs-day have 50, big UAVs-night are 20, if needs in extraction of 20 UAVs, day:night = 14:6), as far as possible to disrupt the same video data sequence.</p>
+			<p><b>Train set:</b> Data other than validation set.</p>
+			<p>The final partition ratio is:<b style="color:red;"> Train set: Validation set: Test set =5:2:3<b>.</p>
           </div>
         </div>
 		
