@@ -191,3 +191,71 @@ pre {
   width: 100%;
   height: 100%;
 }
+
+.member-name, .member-name2, .member-name3, .member-name5 {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 1.625em 0;
+  font-weight: bold;
+}
+.member-name::before {
+  content: attr(data-text);
+  position: relative;
+  display: table;
+  margin: 1.5em auto;
+  font-size: 0.625em;
+  line-height: 1;
+  font-weight: normal;
+  color: #838379;
+}
+.member-name::after, .member-name2::after, .member-name3::after, .member-name5::after {
+  content: "";
+  display: table;
+  margin: 1.5em auto;
+  width: 3em;
+  height: 1px;
+  background-color: #101820;
+}
+.member-name2::after, .member-name3::after, .member-name5::after {
+  content: "";
+  display: table;
+  margin: 1.5em auto;
+  margin-left: 8em;
+  width: 3em;
+  height: 1px;
+  background-color: #101820;
+}
+
+.member-name2::before {
+  content: attr(data-text);
+  position: relative;
+  display: table;
+  margin: 1.5em auto;
+  margin-left: -2em;
+  font-size: 0.625em;
+  line-height: 1;
+  font-weight: normal;
+  color: #838379;
+}
+.member-name3::before {
+  content: attr(data-text);
+  position: relative;
+  display: table;
+  margin: 1.5em auto;
+  margin-left: 1.5em;
+  font-size: 0.625em;
+  line-height: 1;
+  font-weight: normal;
+  color: #838379;
+}
+.member-name5::before {
+  content: attr(data-text);
+  position: relative;
+  display: table;
+  margin: 1.5em auto;
+  margin-left: -5em;
+  font-size: 0.625em;
+  line-height: 1;
+  font-weight: normal;
+  color: #838379;
+}
