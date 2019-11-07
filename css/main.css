@@ -215,7 +215,7 @@ pre {
   width: 3em;
   height: 1px;
   background-color: #101820;
-}
+}  
 .member-name2::after, .member-name3::after, .member-name5::after {
   content: "";
   display: table;
