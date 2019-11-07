@@ -70,9 +70,86 @@
 		
         <div class="row" id="dataset">
           <div class="col-xs-12">
-            <h2><b>Dataset</b></h2>
-            <p>The dataset for the challenge will be released on <a style="color:red;font-weight: bold;">February 15th, 2020</a>. <b style="color:red;"> The proposed dataset will consist of sixty high quality, Full HD video sequences (both RGB and Thermal Infrared), spanning multiple occurrences of multi-scale UAVs.</b> We will build a challenge server on CodaLab which will be open for submission soon afterwards.</p>
-            <p><b>Download:</b><a style="color:red;font-weight:bold;">  XXX</a></p>
+            <p>The dataset for the challenge will be released on <a style="color:red;font-weight: bold;">February 15th, 2020</a>.
+   			   <b style="color:red;"> The proposed dataset will consist of sixty high quality, Full HD video sequences (both RGB and Thermal Infrared), spanning multiple occurrences of multi-scale UAVs.</b> 
+			   We will build a challenge server on CodaLab which will be open for submission soon afterwards.
+			</p>
+          </div>
+        </div>
+		
+        <p><br /></p>
+		
+		<div class="row" id="dataset">
+          <div class="col-xs-12">
+            <h2><b>UAV Dataset</b></h2>
+            <p><b>1. Folder Tree Diagram</b></p>
+			<ul>
+			  <li>Label<ul><li>Test label</li><li>Train label</li><li>Validation label</li></ul></li>
+			  <li>Video<ul><li>Test video</li><li>Train video</li><li>Validation video</li></ul></li>
+			</ul>
+			<p></p>
+			<!-- 大 中 小 白天 夜晚 云层 楼宇 虚假目标 速度变化悬停 遮挡 尺度变化 -->
+            <p><b>2. UAV Dataset Scene and Model:</b>"big", "middle", "small", "day", "night", "cloud cover", "building", "false target", "speed change hover", "occlusion", "scale change".</p>
+			<p></p>
+            <p><b>3. File Tree Diagram (infrared and visible light are the same, and can be merged if necessary)</b></p>
+			<ul>
+			  <li>UAV_Label_Infrared
+			    <ul>
+				  <li>Big
+				    <ul>
+					  <li>DJI-Inspire<ul><li>Day</li><li>Night</li></ul></li>
+					</ul>
+			      </li>
+				  <li>Middle
+				    <ul>
+					  <li>DJI-Phantom4<ul><li>Day</li><li>Night</li></ul></li>
+					</ul>
+			      </li>
+				  <li>Small
+				    <ul>
+					  <li>DJI-MarvicAir<ul><li>Day</li><li>Night</li></ul></li>
+					  <li>DJI-MavicPRO<ul><li>Day</li><li>Night</li></ul></li>
+					</ul>
+			      </li>
+				</ul>
+			  </li>
+			  <li>UAV_Label_Visible-Light
+			    <ul>
+				  <li>Big
+				    <ul>
+					  <li>DJI-Inspire<ul><li>Day</li><li>Night</li></ul></li>
+					</ul>
+			      </li>
+				  <li>Middle
+				    <ul>
+					  <li>DJI-Phantom4<ul><li>Day</li><li>Night</li></ul></li>
+					</ul>
+			      </li>
+				  <li>Small
+				    <ul>
+					  <li>DJI-MarvicAir<ul><li>Day</li><li>Night</li></ul></li>
+					  <li>DJI-MavicPRO<ul><li>Day</li><li>Night</li></ul></li>
+					</ul>
+			      </li>
+				</ul>
+			  </li>
+			</ul>
+            <p>Infrared has 30 videos, visible light has 32 videos.</p>
+			<p></p>
+			<p><b>4. Division Rules</b></p>
+			<p>Test set: Select all data files involved in "false target", do not participate in training, mainly for verification.</p>
+			<p>Validation set: According to the ratio of 3:7 randomly divided the remaining data, classification on the scene of "big", "middle", "small", "day" and "night", right in the file data according to the number of different distribution division (for example, big UAVs-day have 50, big UAVs-night are 20, if needs in extraction of 20 UAVs, day:night = 14:6), as far as possible to disrupt the same video data sequence.</p>
+			<p>Train set: Data other than validation set.</p>
+			<p>The final partition ratio is: Train set: Validation set: Test set =5:2:3.</p>
+          </div>
+        </div>
+		
+        <p><br /></p>
+	  
+	    <div class="row" id="dataset">
+          <div class="col-xs-12">
+            <h2><b>Download</b></h2>
+            <p>You can downlod this dataset at <a style="color:red;font-weight:bold;">  XXX</a></p>
           </div>
         </div>
 		
