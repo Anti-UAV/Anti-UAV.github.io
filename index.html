@@ -1,162 +1,318 @@
 <!DOCTYPE html>
 <html>
-  
-  <head>
-  
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>1st Anti-UAV Challenge</title>
-    <meta name="description" content="Catch UAVs that Want to Watch You ---">
-	
-    <!--Open Graph Related Stuff-->
-    <meta property="og:title" content="1st Anti-UAV Challenge" />
-    <meta property="og:url" content="https://Anti-UAV.github.io/" />
-    <meta property="og:description" content="Catch UAVs that Want to Watch You ---" />
-    <meta property="og:site_name" content="Anti-UAV" />
-    <meta property="og:image" content="" />
-    <meta property="og:image:url" content="" />
-	
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
-    <link rel="stylesheet" type="text/css" href="/css/animate.min.css">
-    <!--<link rel="stylesheet" type="text/css" href="/css/font-awesome.css">-->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900"> 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/lineabasic.css">
-    <link rel="stylesheet" type="text/css" href="/css/magnific-popup.css">
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
-	
-  </head>
-  
-  <body>
-	
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="row">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-		    <a target="_blank" href="http://cvpr2020.thecvf.com/">
-              <img src="img/CVPRLogo.png" alt="FOLIO LOGO" style=" height:60px;" />
-            </a>
-          </div>
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
-            <ul class="nav navbar-nav navbar-right" style="padding-top:10px;">
-              <li><a href="/">Home</a></li>
-              <li><a href="/schedule">Schedule</a></li>
-              <li><a href="/speakers">Speakers</a></li>
-			  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Challenge <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="/dataset" target="_blank">DATASET</a></li>
-                  <li><a href="/leaderboard" target="_blank">LEADERBOARD</a></li>
-                </ul>
-              </li>
-              <li><a href="/submission">Submission</a></li>
-              <li><a href="/organizers">Organizers</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
-	
-    <div class="container">
-      <div class="page-content">
-        
-	<p><br /></p>
-	
-	    <header>
-	      <center><img style="max-width:100% ! important;" src="img/CVPR2.png"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina></center> 
-        </header>
-	      
-	<p><br /></p>
-		
-        <div class="row" id="intro">
-          <div class="col-xs-12">
-            <h2><b>Description of the 1<sup>st</sup> Anti-UAV Challenge</b></h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12">
-		    <p></p>
-            <p>Recently, unmanned aerial vehicle (UAV) is growing rapidly in a wide range of consumer communications and networks with their autonomy, flexibility, and a broad range of application domains. UAV applications offer possible civil and public domain applications in which single or multiple UAVs may be used. At the same time, we also need to be aware of the potential threat to our lives caused by UAV intrusion. Earlier this year, multiple instances of drone sightings halted air traffic at airports, leading to significant economic losses for airlines.</p>
-            <p><b>This workshop focuses on state-of-the-art anti-UAV systems in a bid to safeguard flights.</b> Historically, radar is certainly a very mature technology for detecting traditional incoming airborne threats. However, today, these small drones are challenging for radar to accurately and reliably detect. It is due to the combination of a very small radar cross section and the erratic flight paths of these UAV drones that make trustworthy detection almost impossible. Indeed, how to use computer vision algorithms to perceive UAVs is a crucial part of the whole defense system.</p>
-            <p>The current computer vision research for UAV lacks a high-quality benchmark in dynamic environments. To mitigate this gap, this workshop presents a benchmark dataset and evaluation methodology for the area of detecting and tracking UAVs.<b style="color:red;"> The dataset consists of sixty high quality, Full HD video sequences (both RGB and Thermal Infrared), spanning multiple occurrences of multi-scale UAVs.</b><b> This workshop also encourages participants to establish approaches to fully automatic detection and tracking of UAVs in videos.</b> Although solutions can be derived from the off-the-shelf detection and tracking algorithms, the training and customizations of them for UAVs pose unique challenges. Specifically, how to detect and track fast-moving drones in noisy (e.g., occlusion by cloud and buildings, and fake targets like kites, balloons, birds, etc.) environments and how to use infrared images to locate UAVs in total darkness are not explored enough.</p>
-            <p>This workshop will bring together academic and industrial experts in the field of UAVs to discuss the techniques and applications of tracking UAVs. Participants are invited to submit their original contributions, surveys, and case studies that address the works of UAV’s detection and tracking issues.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <img src="1.png" /></div>
-        </div>
-        
-        <p><br /></p>
-		  
-        <div class="row" id="topic">
-          <div class="col-xs-12">
-            <h2><b>Topics of interest</b></h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12">
-            <p>The submissions are expected to deal with visual perception and processing tasks which include but are not limited to:</p>
-            <ul>
-              <li>Applications of computer vision on UAVs</li>
-              <li>Strategies for searching of UAVs based on NIR and/or VIS data</li>
-              <li>Spectrum sensing techniques for UAVs detection</li>
-              <li>Localization and open-set identification of UAVs</li>
-              <li>Scene understanding for UAVs</li>
-              <li>Small/tiny object detection and tracking techniques</li>
-              <li>Fine-grained object recognition</li>
-              <li>Real-time deep learning inference</li>
-              <li>Infrared image and video analysis</li>
-              <li>Multimodal fusion techniques</li></ul>
-          </div>
-        </div>
-        
-        <p><br /></p>
-		
-		<div class="row">
-          <div class="col-xs-12">
-            <h2><b>Relates to previous workshops at CVPR/ICCV/ECCV</b></h2>
-	      </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12">
-            <ul>
-              <li>ICCV2017 workshop:<ul><li>1st International Workshop on Vision for UAVs</li></ul></li>
-              <li>CVPR2018 workshop:<ul><li>Computer Vision for UAVs</li></ul></li>
-              <li>ECCV2018 workshop:<ul><li>2nd International Workshop on Computer Vision for UAVs</li><li>Vision Meets Drone: A Challenge</li></ul></li>
-              <li>CVPR2019 workshop:<ul><li>3rd International Workshop on Vision for UAVs</li></ul></li>
-              <li>ICCV2019 workshop:<ul><li>Vision Meets Drones 2019: A Challenge</li></ul></li>
-			</ul>
-            <p>With the increasing popularity of UAVs, a large number of workshops about UAVs have been held (listed above). They mainly focus on visual tracking, SLAM, depth perception from drone perspective. Our workshop takes a different perspective, making UAVs as tracking targets, and provides a large-scale dataset to promote deep network learning for UAVs. In addition, the proposed workshop also aims at tiny object detection and tracking in the wild which is more challenging, more practical, and more useful for real applications. Thus our workshop will bridge the needs of industry and research in academia, and may accelerate the process of these computer vision technologies being used in real applications.</p>
-          </div>
-        </div>
-		  
-        <p><br /></p>
-		  
-        <div class="row">
-          <div class="col-xs-12">
-            <h2><b>Contact</b></h2>
-			<p>Please feel free to send any question or comments to:
-			  <a href="mailto:zhaojian90@u.nus.edu" style="color: blue;">zhaojian90@u.nus.edu</a>, 
-			  <a href="mailto:qiang.wang@nlpr.ia.ac.cn" style="color: blue;">qiang.wang@nlpr.ia.ac.cn</a>.
-			</p>
-          </div>
-        </div>		
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script>
+var WebFontConfig = {
+  google: {
+    families: ['Lato:300,400,700', 'Montserrat:400,700']
+  },
+  timeout: 2000
+};
+(function(d) {
+  var wf = d.createElement('script'), s = d.scripts[0];
+  wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+  s.parentNode.insertBefore(wf, s);
+}(document));
+  </script>
 
-        <p><br /></p>
+  <title>CVPR2019</title>
+   <link rel="stylesheet" media="all" href="/assets/application-3e2d40063aa80ee0be812b638bc2a62fc3915331176aaaa19f156e900f2f44f3.css" data-turbolinks-track="true" /> 
+  <!-- <link rel="stylesheet" media="all" href="/assets/1.css" data-turbolinks-track="true" /> --> 
+  <!-- nemo: need to remove $proj_root/public/assets/blahblah.css.gz if there are errors loading the css file -->
+  <script src="/assets/application-72c92eab9dad306c93f160d3d26ec4efdb798f1e1cefdfd5e366b7451a360714.js" data-turbolinks-track="true"></script>
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="4AyMzjqPcWeGosy/WBPdC4GRD9gk6/vU3BgAcCVWVLp86v5n31Sj05TyYWRsO8eZaJ7W+ZupcOFCFh5+N+ruYQ==" />
+</head>
+<body>
 
-	  </div>
+  <div class="container-fluid whole-container">
+<div class="header-container">
+<a id="main-logo" class="a-no-mods header-svg" href="/"></a>
+<!-- <a id="main-logo" class="a-no-mods header-svg" href="javascript:window.location='/'"><img class="img-responsive header-svg" alt="CVPR 2019" height="74" src="/images/CVPRLogo.png" /></a> -->
+<!-- header-svg -->
+<div class="row">
+
+  <div id="main-logo-lg-container" class="col-md-3 nav-left red-bottom-bar hidden-xs hidden-sm">
+    <a href="/"><img height="70" src="/images/CVPRLogo.png" alt="Cvprlogo" /></a>
+  </div>
+
+  <div class="col-md-9 col-sm-12 col-xs-12 no-padding nav-col">
+    <ul class="navbar navbar-default">
+      <div class="container-fluid navbar-fixed no-padding">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#cvpr-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div id="main-logo-xs-container" class="hidden-sm hidden-md hidden-lg"></div>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-fixed no-padding" id="cvpr-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-fixed">
+            <li id="main-logo-md-container" class="hidden-xs hidden-md hidden-lg"></li>
+            <li class=active><a href="/">HOME</a></li>
+            <li ><a href="/organizers">ORGANIZERS</a></li>
+            <li ><a href="/sponsors">SPONSORS</a></li>
+            <!-- <li ><a href="/submission/main_conference/author_guidelines">SUBMISSION</a></li> -->
+            <li ><a href="/submission/timeline">SUBMISSION</a></li>
+            <li ><a href="/attend/travel">ATTEND</a></li>
+            <li ><a href="/program/overview">PROGRAM</a></li>
+            <!-- <li ><a href="javascript:window.location='/exhibit/industry_expo'">EXPO</a></li> -->
+            <li ><a href="/exhibit/exhibitor_information">EXPO</a></li>
+            <li ><a href="/jobs">JOBS</a></li>
+            <!-- <li ><a href="/events/ac_meeting">EVENTS</a></li> -->
+          </ul>
+        </div><!-- navbar-collapse -->
+      </div><!-- container -->
+    </ul>
+  </div>
+</div>
+</div><!-- header-container -->
+<div class="body-container">
+
+
+
+
+
+    <link href="/js/js-image-slider.css" rel="stylesheet" type="text/css" />
+    <script src="/js/js-image-slider.js" type="text/javascript"></script>
+    <!-- <link href="js/generic.css" rel="stylesheet" type="text/css" /> -->
+
+    <script>
+    function isHidden(oDiv){
+      var vDiv = document.getElementById(oDiv);
+      vDiv.style.display = (vDiv.style.display == 'none')?'block':'none';
+    }
+  </script>
+
+<!-- <div id="home-banner">
+  <div class="home-top-content">
+  <div id="logo-home-banner-container" class="col-md-9 col-sm-9 col-xs-12 no-padding">
+    <img src="/images/CVPRLogoReverse.eps" alt="CVPRLogoReverse.eps" height="30%" width="auto">
+  </div>
+    <div id="inner-home-cta-container"></div>
+  </div>
+</div>
+ -->
+<div id="home-banner">
+  <div class="home-top-content">
+    <div class="bigtop-header-title">
+      <div class="super hidden-xs">CVPR 2019</div>
     </div>
-    <script type="text/javascript" src="/static/js/jquery.min.js"></script>
-    <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
-  </body>
+    <div class="sectop-header-title">
+      <h3>Long Beach, CA</h3>
+      <h4 class="less-super">June 16<sup>th</sup> - June 20<sup>th</sup></h4>
+    </div>
+    <div id="inner-home-cta-container"></div>
+  </div>
+</div>
 
+<div id="call-to-action-box">
+
+</div>
+
+<div class="row row-card">
+  <div id="xs-home-banner-container"></div>
+
+  <div class="col-md-3 col-sm-3 col-xs-12 card no-top-padding">
+    <h3>ABOUT</h3>
+    <p>CVPR is the premier annual computer vision event comprising the main conference and several
+    co-located workshops and short courses. With its high quality and low cost, it provides an
+    exceptional value for students, academics and industry researchers.</p>
+    <br>
+    <div>
+      <a href="https://www.thecvf.com/"   target="_blank"><img src="/images/sponsors/cvf_.jpg"     width="40%"></a>
+      <a href="https://www.computer.org/" target="_blank"><img src="/images/sponsors/ieee_cs_.png" width="55%"></a>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-md-12 text-center social-media">
+        <a href="https://www.facebook.com/CVPR2019"><i class="fa fa-facebook"></i></a>
+<a href="https://twitter.com/cvpr2019"><i class="fa fa-twitter"></i></a>
+<!-- <a href="#"><i class="fa fa-google-plus"></i></a> -->
+<!-- <a href="https://www.facebook.com/CVPR2017/"><i class="fa fa-facebook"></i></a>
+<a href="https://twitter.com/hashtag/CVPR2017?src=hash"><i class="fa fa-twitter"></i></a>
+ --><!-- <a href="https://plus.google.com/CVPR2017"><i class="fa fa-google-plus"></i></a> -->
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-12 hidden-md hidden-lg">
+    <div id="outer-home-cta-container"></div>
+  </div>
+
+  <div class="clearfix visible-xs"></div>
+
+  <div id="lg-home-banner-container" class="col-md-9 col-sm-9 col-xs-12 no-padding"></div>
+</div>
+
+
+<div class="row row-card">
+  <div class="col-lg-6 col-md-6 col-sm-6 card card-popup bg-grey">
+
+<h3><strong>A letter from the PAMI TC and CVPR 2019 organizers</strong></h3><br>
+ <p>Welcome to CVPR from the PAMI TC and the entire CVPR 2019 organizing team, and we look forward to seeing you soon in Long Beach.<br><br>
+ You may know that the U.S. government has taken action against a number of technology companies headquartered in China as part of an ongoing trade dispute between the two countries. Affected companies have been placed on a list, and organizations within U.S. jurisdiction cannot share technology with companies on that list unless it is otherwise publicly available. These actions have drawn greater attention recently with the addition of Huawei, a major participant at CVPR. The IEEE is currently interpreting these restrictions cautiously and has issued guidelines that discourage their organizations from sharing papers with researchers from companies on the list unless they have already been accepted for publication, which has implications for our peer review process  This has caused a lot of confusion as well as understandable outrage in our community and others.<br><br>
+The PAMI TC and CVPR have always believed that our meetings are open to all who wish to submit their work or otherwise participate, and we welcome all as friends and colleagues. IEEE’s interpretation of these restrictions affects only whether members of listed companies may review papers. Participation in our public meetings is not affected. However, we firmly believe that program chairs and area chairs, as well as editors for our journals, should be able to choose the referee for a paper freely, and we will continue to advocate for this view very strongly.<br><br>
+After receiving further clarification from the U.S. government, IEEE has lifted their guidelines discouraging the sharing of unpublished papers with employees of Huawei and others on the restricted export list. We welcome this change and will continue to advocate for open science in all of its aspects. <br><br>
+
+Bryan Morse<br>
+PAMI TC Chair<br><br>
+
+Larry Davis, Philip Torr, and Song-Chun Zhu<br>
+CVPR 2019 General Chairs
+</p>
+
+    <!-- <h3>CVPR 2019 LOCATION</h3> -->
+    <!-- <p>CVPR 2019 will take place at the
+    <a href="http://www.longbeachcc.com/"> Long Beach Convention Center </a> from June 16 to June 20, 2019 in Long Beach, CA.</p>
+    <p><strong>Main Conference:</strong> June 18 - 20 (Tuesday - Thursday)</p>
+    <p><strong>Workshops & Tutorials:</strong> June 16 and 17 (Sunday & Monday)</p>
+
+    <p>Looking forward to seeing you in Long Beach, CA. </p> -->
+
+  </div>
+  <!-- <div class="col-md-6 col-sm-6 card card-popup bg-dark"> -->
+  <!-- <div class="col-md-6 col-sm-12 col-xs-12 card card-popup-animated"> -->
+  <div class="col-lg-6 col-md-6 col-sm-6 card card-popup bg-white">
+
+
+  <h3>News and Updates</h3>
+
+  <h4>CVPR 2019 Awards</h4>
+  <p>CVPR 2019 Awards can be found <a class="hyperlinks" href="/program/main_conference#awards"><b>here</b></a>.</p>
+
+  <h4>Opening Slides</h4>
+  <p>The slides from the opening ceremony are available <a href="/files/CVPR 2019 - Welcome Slides Final.pdf" target="_blank"><span class="hyperlinks"><strong>here</strong></span></a>, describing statistics about the technical program and the Expo; the best paper award winners; and the PAMI-TC award winners. </p>
+
+  <h4>CVPR 2019 Interactive Data Visualization (by GVU Center at Georgia Tech)</h4>
+  <p>A high-level interactive data visualization of research topics and details for each paper can be found <a class="hyperlinks" target="_blank" href="https://public.tableau.com/views/CVPR2019all/DashboardCVPR?utm_source=mailchimp&utm_campaign=03007ce6e1f0&utm_medium=page&:embed=y&:display_count=yes&publish=yes&:origin=viz_share_link:showVizHome=no">here</a>. You may also use it to filter papers by topic and/or institution and see the schedule for those papers.</p>
+
+  <h4>CVPR 2019 has closed registration.</h4>
+  <p>we are at max capacity and cannot accommodate additional registrations.
+  There will not be any onsite registrations available.</p>
+
+  <h4>Program Guide is available now.</h4>
+  <p>Program Guide can be found <a href="/files/CVPR_2019_Program_Guide.pdf" target="_blank"><span class="hyperlinks"><strong>here</strong></span></a>.</p>
+
+  
+  <div style="color:rgb(223,82,3);font-weight:bold;cursor:pointer" class="hyperlinks" onclick="isHidden('more_news')"><strong> More news >> </strong></div>
+
+  <div id="more_news" style="display:none">
+
+  <h4>Oral video submission: The deadline is May 28th 11:59 pm P.T.</h4>
+  <p>For instructions and uploading the video, please visit <a class="hyperlinks" target="_blank" href="http://video.vast.uccs.edu">http://video.vast.uccs.edu</a>.<br>To confirm that your video was successfully uploaded, you will receive a confirmation email. <br>NOTE: please check your junk folder if you cannot find the email.
+  </p>
+
+  <h4>Poster Printing Instructions are available now</h4>
+
+  <p>Each poster is assigned a specific poster location in the exhibition hall in the form of [Letter Number] (e.g., [D17]). The letter indicates the row and the number the location within the row (see the Floor Plan). Poster locations will be specified in the conference pocket guide next to the paper's title [pocket guide coming soon]. The location of these posters will also be provided on the CVPR app as well. Check with the volunteers or the registration desk if you cannot find your poster board.<br>
+
+  The physical dimensions of the poster stands that will be available this year are 8 feet wide by 4 feet high. Please review the reference <a class="hyperlinks" href="/files/cvpr19_poster_template.pptx"><strong>poster template</strong></a> for more details on how to prepare your poster. You do NOT have to use this template, but please read the instructions carefully and prepare your posters accordingly.</p>
+
+  <p>We are working with FedEx Printing as our local poster printer in Long Beach. They will deliver posters to the convention  center in advance of your scheduled slot. You are responsible to making all arrangements and payments.<br>
+    Instructions for uploading: Please email directly to <a class="hyperlinks" href="mailto:CVPR@usa0328@fedex.com">usa0328@fedex.com</a>. Put in the subject line CVPR 2019! Files must be saved as a PDF to be uploaded.<br>
+    Payment: Credit cards only. Fill out the <a class="hyperlinks" href="/files/Tender Authorization Form.pdf"><strong>credit card authorization form</strong></a>, scan it and upload it along with their file at the same time. OR, you can call in with your credit card number. All forms will be shredded as soon as payment is processed.<br>
+    All posters will be delivered to the convention center. Please tell them what date/time you need it by. Full color posters inkjet printed on double-weight, matte paper are $75 each. Rush posters are $93.75. Orders can be placed up to 12PM June 16th. After this, the price increases to $93.75.<br>
+    Posters will be delivered to the convention center and can be picked up at registration. For rush printing on a poster, the turnaround time can be anywhere from 4 hours to 24 hours depending on the demand.
+  </p>
+
+  <h4>Preliminary Schedule of Paper Presentations is now available.</h4>
+  <p>Details can be found <a href="/program/main_conference"><span class="hyperlinks"><strong>here</strong></span></a>.</p>
+
+  <h4>Instructions for oral presentation</h4>
+  <p>This year, oral papers can be presented only using prerecorded videos. Each video presentation should take 4 minutes and 55 seconds (or less).  This <a class="hyperlinks" target="_blank" href="http://video.vast.uccs.edu">website</a> provides all the details about the prerecorded video presentation and format.  For your information, this prerecorded video format was used in WACV2019 and you can find <a class="hyperlinks" target="_blank" href="https://www.youtube.com/watch?v=3NU-r_qhHP0">examples</a> on Youtube. All the videos must be uploaded no later than May 28th, 11:59 p.m. PT. This is a hard deadline (no extensions will be given). Prerecorded videos may include audio-clips for demo purpose. Pre-recorded audio of the presenter is NOT allowed. One of the authors must be present to explain the prerecorded video and participate in the question session afterwards.</p>
+
+  <h4>Final student volunteer list is <a class="hyperlinks" href="/files/volunteers.txt"><strong>here</strong></a>.</h4>
+
+  <h4>LaTeX/Word Templates Update!</h4>
+  <p>Please re-download the templates files from <a href="/submission/main_conference/author_guidelines"><span class="hyperlinks"><strong>here</strong></span></a>, or replace the ieee.bst file with this one <a class="hyperlinks" href="/files/ieee_fullname.bst"><strong>ieee_fullname.bst</strong></a>.</p>
+
+  <h4>Student volunteer applications are now open.</h4>
+  <p>Information and FAQ about student volunteering can be found <a href="/attend/student_volunteer"><span class="hyperlinks"><strong>here</strong></span></a>.</p>
+
+  <h4>Registration is available now.</h4>
+  <p>Registration link and requirements can be found <a class="hyperlinks" href="/attend/registration"><strong>here</strong></a>.<br>
+  More information about the conference venue and hotels can be found <a class="hyperlinks" href="/attend/travel"><strong>here</strong></a>.<br>
+  Please register EARLY and request a visa letter EARLY so that you have plenty of time to process the application.
+  </p>
+
+  <h4>Final tutorial list is now avaliable.</h4>
+    <p>Details can be found <a href="/program/tutorials"><span class="hyperlinks"><strong>here</strong></span></a>.</p>
+
+  <h4>CVPR 2019 Accepted Papers List is available now.</h4>
+  <p>The list of accepted papers can be found <a class="hyperlinks" href="/files/cvpr_2019_final_accept_list.txt"><strong>here</strong></a>.</p>
+
+  <h4>Instructions for workshop organizers are available now.</h4>
+      <p>Details can be found <a href="/program/workshop_instructions"><span class="hyperlinks"><strong>here</strong></span></a>.</p>
+
+
+  <h4>Call for Demonstrations is available now.</h4>
+  <p>Call for demonstrations and related dates can be found <a href="/program/demos"><span class="hyperlinks"><strong>here</strong></span></a>.</p>
+
+  <h4>CMT for doctoral consortium is now open.</h4>
+    <p>Details can be found <a href="/program/doctoral_consortium"><span class="hyperlinks"><strong>here</strong></span></a>.</p>
+
+  <h4>Final workshops list is now avaliable.</h4>
+    <p>Details can be found <a href="/program/workshops"><span class="hyperlinks"><strong>here</strong></span></a>.</p>
+
+  <h4>Jobs page is now open.</h4>
+    <p>Information about posting new jobs can be found <a href="/jobs"><span class="hyperlinks"><strong>here</strong></span></a>.</p>
+
+  <h4>Doctoral consortium applications are now open.</h4>
+    <p>Information about the doctoral consortium can be found <a href="/program/doctoral_consortium"><span class="hyperlinks"><strong>here</strong></span></a>.</p>
+
+  <h4>Calls for Papers/Workshops/Tutorials are available now.</h4>
+    <p>
+    Call for <a href="/submission/main_conference/author_guidelines#call_for_papers"><span class="hyperlinks"><strong>Papers</strong></span></a>/
+    <a href="/submission/workshop_proposals"><span class="hyperlinks"><strong>Workshops</strong></span></a>/
+    <a href="/submission/tutorial_proposals"><span class="hyperlinks"><strong>Tutorials</strong></span></a>.
+    </p>
+
+  <h4>CVPR 2019 Websites are now online!</h4>
+
+  </div>
+
+
+  </div>
+</div>
+
+
+</div><!-- body-container -->
+<div class="footer-container">
+
+<div class="row">
+  <div class="col-md-12 text-center social-media">
+    <a href="https://www.facebook.com/CVPR2019"><i class="fa fa-facebook"></i></a>
+<a href="https://twitter.com/cvpr2019"><i class="fa fa-twitter"></i></a>
+<!-- <a href="#"><i class="fa fa-google-plus"></i></a> -->
+<!-- <a href="https://www.facebook.com/CVPR2017/"><i class="fa fa-facebook"></i></a>
+<a href="https://twitter.com/hashtag/CVPR2017?src=hash"><i class="fa fa-twitter"></i></a>
+ --><!-- <a href="https://plus.google.com/CVPR2017"><i class="fa fa-google-plus"></i></a> -->
+
+
+
+  </div>
+</div>
+
+<div class="row footer-style">
+    <p>&copy; 2019 CVPR</p>
+
+<!-- By Jiang-Jiang Liu -->
+
+</div>
+</div><!-- footer-container -->
+
+
+<script src="home.js"></script>
+
+  </div>
+
+</body>
 </html>
