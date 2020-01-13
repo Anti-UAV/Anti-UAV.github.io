@@ -146,70 +146,7 @@
           </div>
         </div>
 	      <p></p>
-		<div class="row">
-          <div class="col-xs-12">
-            <h2><b>Introduction</b></h2>
-			<p>
-			Anti-UAV tracking competition requires algorithms to track a given UAV target and simultaneously estimate the tracking states of the target. When the target disappears, an invisible mark of the target needs to be given.
-			</p>
-          </div>
-			<p></p>
-        </div>
-		  <div class="row">
-          <div class="col-xs-12">
-            <h2><b>Contact</b></h2>
-			<p>Please feel free to send any question or comments to:
-			</p>
-          </div>
-        </div>				
-        <p><br /></p>
-		  
-        <div class="row">
-          <div class="col-xs-12">
-            <h2><b>Dataset</b></h2>
-			<iframe width="500px" height="400px"src="3.mp4" object-fit="fill" frameborder="0" autoplay="autoplay"  allow="autoplay; encrypted-media";></iframe>
-			<p>The dataset consists of sixty high quality, Full HD video sequences (both RGB and Thermal Infrared), spanning multiple occurrences of multi-scale UAVs.</p>
-          </div>
-        </div>
-		<p></p>	
-			<div class="row">
-          <div class="col-xs-12">
-            <h2><b>Metrics</b></h2>
-			<p>We define the tracking accuracy as:</p>
-			<div style="background:#66FF99; color:#FF0000">
-			<p >acc = Σt(IoUt*δ(vt>0)+ pt(1-δ(vt>0)))/T</p>
-			</div>
-			<p >The IoUi is Intersection over Union between each corresponding ground truth and tracking boxes and the v are the visibility flags of the ground truth (the tracker’s predicted p are used to measure the state accuracy). The accuracy is averaged over all frames.</p>
-          </div>
-        </div>
-	      <p></p>
-		<div class="row">
-          <div class="col-xs-12">
-            <h2><b>Results Format</b></h2>
-			<p>For tracking with bounding boxes, please use the following format::</p>
-			<div style="background:#66FF99; color:#FF0000">
-			<p >[</p>
-<p>[x,y,width,height],</p>
-<p>[x,y,width,height],</p>
-<p>[],</p>
-<p>…</p>
-<p></p>
-<p>[x,y,width,height]]</p>
-</div>
-			<p >Note: box coordinates are floats measured from the top left image corner (and are 0-indexed) and empty list denote `not exist` flag.</p>
-          </div>
-        </div>
-		<div class="row">
-          <div class="col-xs-12">
-            <h2><b>Baseline and Evaluation Code</b></h2>
-			<p>Evaluation code is available on the Anti-UAV github. Specifically, see eval.py in the Python code, respectively. Also see demo.py in Python code. Before running the evaluation code, please prepare your results in the format described on the results format section.</p>
-          </div>
-        </div>
-						
-        <p><br /></p>
 
-	  </div>
-	    <p></p>
  <div class="row">
           <div class="col-xs-12">
 		  <h2><b>SPONSORS</b></h2>
