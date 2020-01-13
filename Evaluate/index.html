@@ -1,8 +1,8 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
   
-  <head>
-  <meta http-equiv="content-type" content="txt/html; charset=utf-8" />
      <style>
 </style>
     <meta charset="utf-8" />
@@ -95,7 +95,7 @@
        <div class="row">
           <div class="col-xs-12" >
             <h2><b>Dataset</b></h2>
-			<div  align="center"><iframe width="500px" height="400px"src="/3.mp4" object-fit="fill" frameborder="0" autoplay="autoplay"  allow="autoplay; encrypted-media";></iframe></div>
+			<div  align="center"><iframe width="500px" height="400px"src="3.mp4" object-fit="fill" frameborder="0" autoplay="autoplay"  allow="autoplay; encrypted-media";></iframe></div>
 			<p>The dataset consists of sixty high quality, Full HD video sequences (both RGB and Thermal Infrared), spanning multiple occurrences of multi-scale UAVs.</p>
           </div>
         </div>
@@ -105,9 +105,9 @@
             <h2><b>Metrics</b></h2>
 			<p>We define the tracking accuracy as:</p>
 			<div style="background:#66FF99; color:#FF0000">
-			<p >acc = ¦²t(IoUt*¦Ä(vt>0)+ pt(1-¦Ä(vt>0)))/T</p>
+			<p >acc = Σt(IoUt*δ(vt>0)+ pt(1-δ(vt>0)))/T</p>
 			</div>
-			<p >The IoUi?is Intersection over Union between each corresponding ground truth and tracking boxes and the v are the visibility flags of the ground truth (the tracker¡¯s predicted p?are used to measure the state accuracy). The accuracy is averaged over all frames.</p>
+			<p >The IoUi?is Intersection over Union between each corresponding ground truth and tracking boxes and the v are the visibility flags of the ground truth (the tracker��s predicted p?are used to measure the state accuracy). The accuracy is averaged over all frames.</p>
           </div>
         </div>
 		<div class="row">
@@ -119,7 +119,7 @@
 <p>[x,y,width,height],</p>
 <p>[x,y,width,height],</p>
 <p>[],</p>
-<p>¡­</p>
+<p>…</p>
 <p></p>
 <p>[x,y,width,height]]</p>
 </div>
