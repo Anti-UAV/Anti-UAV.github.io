@@ -55,12 +55,7 @@
               <li><a href="/speakers">Speakers</a></li>
 			  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Challenge <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="/dataset" target="_blank">DATASET</a></li>
-                  <li><a href="/leaderboard" target="_blank">LEADERBOARD</a></li>
-                </ul>
-              </li>
-			  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">DATASET<span class="caret"></span></a>
-                <ul class="dropdown-menu">
+		 <li><a href="/Evaluate" target="_blank">Evaluate</a></li>
                   <li><a href="/dataset" target="_blank">DATASET</a></li>
                   <li><a href="/leaderboard" target="_blank">LEADERBOARD</a></li>
                 </ul>
@@ -78,11 +73,7 @@
 
         
 
-	<p><br /></p>
-	    <header>
-	      <center><img style="max-width:100% ! important;" src="/img/CVPR2.png"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina></center> 
-        </header>
-	<p><br /></p>
+
 		<div class="row">
           <div class="col-xs-12">
             <h2><b>Introduction</b></h2>
@@ -107,7 +98,7 @@
 			<div style="border:2px solid #a1a1a1;padding:10px 40px;background:#d6ffd6; color:#000000; font-family: Consolas,Courier,monospace; ">
 			<p >acc = Σt(IoUt*δ(vt>0)+ pt(1-δ(vt>0)))/T</p>
 			</div>
-			<p >The IoUi?is Intersection over Union between each corresponding ground truth and tracking boxes and the v are the visibility flags of the ground truth (the tracker��s predicted p?are used to measure the state accuracy). The accuracy is averaged over all frames.</p>
+			<p >The IoU_i is Intersection over Union between each corresponding ground truth and tracking boxes and the v are the visibility flags of the ground truth (the tracker's predicted p are used to measure the state accuracy). The accuracy is averaged over all frames.</p>
           </div>
         </div>
 		<div class="row">
@@ -129,7 +120,7 @@
 		<div class="row">
           <div class="col-xs-12">
             <h2><b>Baseline and Evaluation Code</b></h2>
-			<p>Evaluation code is available on the?Anti-UAV github. Specifically, see eval.py?in the Python code, respectively. Also see demo.py in Python code. Before running the evaluation code, please prepare your results in the format described on the?results format?section.</p>
+			<p>Evaluation code is available on the Anti-UAV github. Specifically, see eval.py in the Python code, respectively. Also see demo.py in Python code. Before running the evaluation code, please prepare your results in the format described on the results format section.</p>
           </div>
         </div>
 	  </div>	
