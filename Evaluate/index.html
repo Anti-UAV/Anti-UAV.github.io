@@ -110,7 +110,8 @@
 			<div style="border:2px solid #a1a1a1;padding:10px 40px;background:#d6ffd6; color:#000000; font-family: Consolas,Courier,monospace; ">
 			<p></p>
 			<p >acc = Σt(IoUt*δ(vt>0)+ pt(1-δ(vt>0)))/T</p></div>
-			<p >The IoU_i is Intersection over Union between each corresponding ground truth and tracking boxes and the v are the visibility flags of the ground truth (the tracker's predicted p are used to measure the state accuracy). The accuracy is averaged over all frames.</p>
+			<p >
+			The IoU_i is Intersection over Union (IoU) between each corresponding ground truth and tracking boxes and the v are the visibility flags of the ground truth (the tracker’s predicted p are used to measure the state accuracy). The accuracy is averaged over all frames.</p>
           </div>
         </div>
 		<div class="row">
@@ -133,8 +134,8 @@
           <div class="col-xs-12">
             <h2><b>Baseline and Evaluation Code</b></h2>
 			<p>Baseline and Evaluation codes are available on the Anti-UAV github. 
-Please refer to <a href="https://github.com/Anti-UAV/baseline">test.py.</a>.</p>
-			<p> We provide IR, RGB videos and their ground-truth labels. Contestants can only use both IR and RGB videos and their location in the first frame. Our evaluation ranks are calculated according to the results on the IR video. </p>
+Please refer to <a href="https://github.com/Anti-UAV/baseline">test.py</a>.</p>
+			<p> We provide Thermal Infrared (IR), RGB videos and their ground-truth labels. Contestants can only use both IR and RGB videos and their ground-truth location in the first frame. Our evaluation ranks are calculated according to the results on the IR video. </p>
           </div>
         </div>
 	  </div>	
