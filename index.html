@@ -1,235 +1,188 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-
-  <style>
-  </style>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>1st Anti-UAV Challenge</title>
-  <meta name="description" content="Catch UAVs that Want to Watch You ---">
-
-  <!--Open Graph Related Stuff-->
-  <meta property="og:title" content="1st Anti-UAV Challenge" />
-  <meta property="og:url" content="https://Anti-UAV.github.io/" />
-  <meta property="og:description" content="Catch UAVs that Want to Watch You ---" />
-  <meta property="og:site_name" content="Anti-UAV" />
-  <meta property="og:image" content="" />
-  <meta property="og:image:url" content="" />
-
-  <!-- CSS -->
-  <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="/css/main.css">
-  <link rel="stylesheet" type="text/css" href="/css/animate.min.css">
-  <!--<link rel="stylesheet" type="text/css" href="/css/font-awesome.css">-->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="/css/lineabasic.css">
-  <link rel="stylesheet" type="text/css" href="/css/magnific-popup.css">
-  <link rel="stylesheet" type="text/css" href="/css/style.css">
-
-</head>
-
-<body>
-
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <div class="row">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-            data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a target="_blank" href="http://cvpr2020.thecvf.com/">
-            <img src="img/CVPRLogo.png" alt="FOLIO LOGO" style=" height:60px;" />
-          </a>
-        </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right" style="padding-top:10px;">
-            <li><a href="/">Home</a></li>
-            <li><a href="/schedule">Schedule</a></li>
-            <li><a href="/speakers">Speakers</a></li>
-            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Challenge <span
-                  class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="/Evaluate" target="_blank">Evaluate</a></li>
+  
+  <head>
+  
+     <style>
+</style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>1st Anti-UAV Challenge</title>
+    <meta name="description" content="Catch UAVs that Want to Watch You ---">
+	
+    <!--Open Graph Related Stuff-->
+    <meta property="og:title" content="1st Anti-UAV Challenge" />
+    <meta property="og:url" content="https://Anti-UAV.github.io/" />
+    <meta property="og:description" content="Catch UAVs that Want to Watch You ---" />
+    <meta property="og:site_name" content="Anti-UAV" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:url" content="" />
+	
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/animate.min.css">
+    <!--<link rel="stylesheet" type="text/css" href="/css/font-awesome.css">-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/lineabasic.css">
+    <link rel="stylesheet" type="text/css" href="/css/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+	
+  </head>
+  
+  <body>
+	
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="row">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+		    <a target="_blank" href="http://cvpr2020.thecvf.com/">
+              <img src="img/CVPRLogo.png" alt="FOLIO LOGO" style=" height:60px;" />
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
+            <ul class="nav navbar-nav navbar-right" style="padding-top:10px;">
+              <li><a href="/">Home</a></li>
+              <li><a href="/schedule">Schedule</a></li>
+              <li><a href="/speakers">Speakers</a></li>
+	<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Challenge <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+		<li><a href="/Evaluate" target="_blank">Evaluate</a></li>
                 <li><a href="/dataset" target="_blank">DATASET</a></li>
-                <li><a href="/leaderboard" target="_blank">LEADERBOARD</a></li>
-
-              </ul>
-            </li>
-            <li><a href="/submission">Submission</a></li>
-            <li><a href="/organizers">Organizers</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <div class="container">
-    <div class="page-content">
-
-      <p><br /></p>
-      <style type="text/css">
-        * {
-          margin: 0;
-          padding: 0;
-        }
-
-        div {
-          position: relative;
-        }
-
-        div w {
-          position: absolute;
-          right: 40px;
-          top: 40px;
-          color: white;
-        }
-      </style>
-      <div>
-        <!-- <img src="/img/CVPR.jpg" style="width:100% min-height:200px" />
-        <font size="6"><strong>
-            <w>The 1<sup>st</sup> Anti-UAV Workshop & Challenge</w>
-          </strong></font>
-        <font size="6">
-          <w><br><br><br>June 14th - 19th, 2020 Seattle, WA<br /><br /><br /></w>
-        </font> -->
-      </div>
-      <p><br /></p>
-      <div class="row">
-        <div class="trend-entry d-flex">
-          <div class="trend-contents">
-            <div class="row">
-              <div class="col-xs-12">
-                <h2><b>
-                    <p style="text-align: center">Schedule</p>
-                  </b></h2>
-                <div class="section-title2">
-                  <h2><a href="https://zoom.us/j/97663667576?pwd=KzM2UmdMbEIxVkJLVEtWSFhrSUZmUT09">
-                      <p style="text-align: center">[Zoom Entrance]</p>
-                    </a></h2>
-                </div>
-                <p>
-                <table class="table  table-hover" style="font-size:14px">
-                  <thead>
-                    <tr>
-                      <th width="83" scope="col"> Date </th>
-                      <th width="455" scope="col">May 1st saturday 2021</th>
-                      <th width="103" scope="col"> Speaker</th>
-                      <th width="969" scope="col"> Topic</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>8:30-08:40</td>
-                      <td></td>
-                      <td></td>
-                      <td>Opening Remarks and Welcome</td>
-                    </tr>
-                    <tr>
-                      <td>08:40-09:10</td>
-                      <td></td>
-                      <td></td>
-                      <td>The 2nd Anti-UAV challenge introduction and results</td>
-                    </tr>
-                    <tr>
-                      <td>09:10-09:25</td>
-                      <td></td>
-                      <td></td>
-                      <td><strong>Oral talk 1: </strong> 1st-Place Award of the 2nd Anti-UAV Challenge</td>
-                    </tr>
-                    <tr>
-                      <td>09:25-09:55</td>
-                      <td>Professor at Stony Brook University</td>
-                      <td>Haibin Ling</td>
-                      <td><strong>Invited talk 1: </strong></td>
-                    </tr>
-                    <tr>
-                      <td>09:55-10:10</td>
-                      <td></td>
-                      <td></td>
-                      <td><strong>Oral talk 2: </strong>2nd-Place Award of the 2nd Anti-UAV Challenge</td>
-                    </tr>
-                    <tr>
-                      <td>10:10-10:40</td>
-                      <td></td>
-                      <td></td>
-                      <td>Poster session and coffee break</td>
-                    </tr>
-                    <tr>
-                      <td>10:40-11:10</td>
-                      <td>Professor at University of California,Merced</td>
-                      <td>Ming-Hsuan Yang</td>
-                      <td><strong>Invited talk 2:</strong>3rd-Place Award of Anti-UAV Challenge</td>
-                    </tr>
-                    <tr>
-                      <td>11:10-11:25</td>
-                      <td></td>
-                      <td></td>
-                      <td><strong>Oral talk 3:</strong>3rd-Place Award of the 2nd Anti-UAV Challenge</td>
-                    </tr>
-                    <tr>
-                      <td>11:25-11:40</td>
-                      <td></td>
-                      <td></td>
-                      <td><strong>Oral talk 4:</strong>Best Paper Award</td>
-                    </tr>
-                    <tr>
-                      <td>11:40-12:00</td>
-                      <td></td>
-                      <td></td>
-                      <td>Awards & Future Plans</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
+		<li><a href="/leaderboard" target="_blank">LEADERBOARD</a></li>
+                  
+                </ul>
+              </li>
+              <li><a href="/submission">Submission</a></li>
+              <li><a href="/organizers">Organizers</a></li>
+            </ul>
           </div>
         </div>
-        <p><br /></p>
+      </div>
+    </nav>
+	
+    <div class="container">
+      <div class="page-content">
+        
+	<p><br /></p>
+<style type="text/css">
+	*{margin:0;padding;0;}
+	div{position:relative;}
+	div w{position:absolute;right:40px;top:40px;color:white;}
+	      </style>
+		<div>
+              <img src="/img/CVPR.jpg" style="width:100% min-height:200px" />
+		<font size="6"><strong><w>The 1<sup>st</sup> Anti-UAV Workshop & Challenge</w></strong></font>
+		<font size="6"><w><br><br><br>June 14th - 19th, 2020 Seattle, WA<br/><br/><br/></w></font>
+	</div>
+	<p><br /></p>
+<div class="row">
+                <div class="trend-entry d-flex">
+                    <div class="trend-contents">
+			    	<div class="row">
+          <div class="col-xs-12">
+            <h2><b> <p style="text-align: center">Schedule</p></b></h2>
+            <div class="section-title2">
+                     <h2><a href="https://zoom.us/j/97663667576?pwd=KzM2UmdMbEIxVkJLVEtWSFhrSUZmUT09" > <p style="text-align: center">[Zoom Entrance]</p></a></h2>
+            </div>
+            <p>
+                        <table class="table  table-hover" style="font-size:14px">
+                        <thead>
+                        <tr>
+                            <th width="83" scope="col"> Date    </th>
+                            <th width="455" scope="col">June 19th Sunday 2020 <br/>
+                            (Pacific Time, SF Time) </th>
+                            <th width="103" scope="col"> Speaker</th>
+                            <th width="969" scope="col"> Topic</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>13:30-14:00</td>
+                            <td>Institute of North Electronic Equipment</td>
+                            <td>Jian Zhao</td>
+                            <td>Opening Remarks and Welcome</td>
+                        </tr>
+                        <tr>
+                            <td>14:00-14:30</td>
+                            <td>Institute of North Electronic Equipment</td>
+                            <td>Jian Zhao</td>
+                            <td>The Anti-UAV Challenge Introduction and Results</td>
+                        </tr>
+                        <tr>
+                            <td>14:30-14:40</td>
+                            <td>Institute of Information Engineering, Chinese Academy of Sciences</td>
+                            <td>Chunhui Zhang</td>
+                            <td><strong>Oral talk 1: </strong> 1st-Place Award of Anti-UAV Challenge [<a href="/workshop/111-talk.pdf">ppt</a>][<a href="/workshop/111-oral.mp4">video</a>]</td>
+                        </tr>
+                        <tr>
+                            <td>14:40-15:10</td>
+                            <td>Professor at Stony Brook University</td>
+                            <td>Haibin Ling</td>
+                            <td><strong>Invited talk 1: </strong>Tracking and Detection in UAV Imagery [<a href="https://www3.cs.stonybrook.edu/~hling/tmp/66-oral.mp4">video</a>]</td>
+                        </tr>
+                        <tr>
+                            <td>15:40-15:50</td>
+                            <td>Xi’an Jiaotong University</td>
+                            <td>Xingjie Zhao</td>
+                            <td><strong>Oral talk 2: </strong>2nd-Place Award of Anti-UAV Challenge [<a href="/workshop/222-talk.pdf">ppt</a>][<a href="/workshop/222-oral.mp4">video</a>]</td>
+                        </tr>
+                        <tr>
+                            <td>15:50-16:20</td>
+                            <td>Research Scientist at Google</td>
+                            <td>Ming-Hsuan Yang</td>
+                            <td><strong>Invited talk 2: </strong>Learning to Detect and Segment Objects Across Domains [<a href="/workshop/CVPR2020_Anti_UAV_Talk_Ming-Hsuan_Yang.pdf">ppt</a>][<a href="/workshop/CVPR2020_Anti_UAV_Talk_Ming-Hsuan_Yang.mp4">video</a>]</td>
+                        </tr>
+                        <tr>
+                            <td>16:20-16:30</td>
+                            <td>Institute of Automation, Chinese Academy of Sciences</td>
+                            <td>Linyu Zheng</td>
+                            <td><strong>Oral talk 3: </strong>3rd-Place Award of Anti-UAV Challenge [<a href="/workshop/333-tal.pdf">ppt</a>][<a href="/workshop/333-oral.mp4">video</a>]</td>
+                        </tr>
+                        <tr>
+                            <td>16:30-16:40</td>
+                            <td>Middle East Technical University</td>
+                            <td>Aybora Koksal</td>
+                            <td><strong>Oral talk 4: Best Paper Award </strong>[<a href="http://openaccess.thecvf.com/content_CVPRW_2020/papers/w69/Koksal_Effect_of_Annotation_Errors_on_Drone_Detection_With_YOLOv3_CVPRW_2020_paper.pdf">paper</a>][<a href="/workshop/13-talk.pdf">ppt</a>][<a href="/workshop/13-oral.mp4">video</a>]n</td>
+                        </tr>
+                       
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+	</div>	
+</div>
+    <p><br /></p>
 
-
+	  
         <div class="row" id="intro">
           <div class="col-xs-12">
-            <h2><b>Description of the 2<sup>st</sup>Anti-UAV Workshop & Challenge</b></h2>
+            <h2><b>Description of the 1<sup>st</sup> Anti-UAV Challenge</b></h2>
           </div>
         </div>
         <div class="row">
           <div class="col-xs-12">
-            <p></p>
-            <p>Recently, unmanned aerial vehicle (UAV) is growing rapidly in a wide range of consumer communications and
-              networks with their autonomy, flexibility, and a broad range of application domains. UAV applications
-              offer possible civil and public domain applications in which single or multiple UAVs may be used. At the
-              same time, we also need to be aware of the potential threat to our lives caused by UAV intrusion. Earlier
-              this year, multiple instances of drone sightings halted air traffic at airports, leading to significant
-              economic losses for airlines.<b>This workshop focuses on state-of-the-art anti-UAV systems in a bid to
-                safeguard flights.</b></p>
-            <p>The current computer vision research for UAV lacks a high-quality benchmark in dynamic environments. To
-              mitigate this gap, this workshop presents a benchmark dataset and evaluation methodology for the area of
-              detecting and tracking UAVs.<b style="color:red;">The dataset consists of 160 high quality, Full HD video
-                sequences (100 videos are used for test-dev and the rest are used for test-final), spanning multiple
-                occurrences of multi-scale UAVs.</b><b> This workshop also encourages participants to establish
-                approaches to fully automatic detection and tracking of UAVs in videos.</b></p>
-            <p>This workshop will bring together academic and industrial experts in the field of UAVs to discuss the
-              techniques and applications of tracking UAVs. Participants are invited to submit their original
-              contributions, surveys, and case studies that address the works of UAV’s detection and tracking issues.
-            </p>
+		    <p></p>
+            <p>Recently, unmanned aerial vehicle (UAV) is growing rapidly in a wide range of consumer communications and networks with their autonomy, flexibility, and a broad range of application domains. UAV applications offer possible civil and public domain applications in which single or multiple UAVs may be used. At the same time, we also need to be aware of the potential threat to our lives caused by UAV intrusion. Earlier this year, multiple instances of drone sightings halted air traffic at airports, leading to significant economic losses for airlines.<b>This workshop focuses on state-of-the-art anti-UAV systems in a bid to safeguard flights.</b></p>
+            <p>The current computer vision research for UAV lacks a high-quality benchmark in dynamic environments. To mitigate this gap, this workshop presents a benchmark dataset and evaluation methodology for the area of detecting and tracking UAVs.<b style="color:red;">The dataset consists of 160 high quality, Full HD video sequences (100 videos are used for test-dev and the rest are used for test-final), spanning multiple occurrences of multi-scale UAVs.</b><b> This workshop also encourages participants to establish approaches to fully automatic detection and tracking of UAVs in videos.</b></p>
+            <p>This workshop will bring together academic and industrial experts in the field of UAVs to discuss the techniques and applications of tracking UAVs. Participants are invited to submit their original contributions, surveys, and case studies that address the works of UAV’s detection and tracking issues.</p>
           </div>
         </div>
         <div class="row">
           <div class="col-md-12">
-            <img src="1.png" />
-          </div>
+            <img src="1.png" /></div>
         </div>
-
+        
         <p><br /></p>
-
+		  
         <div class="row" id="topic">
           <div class="col-xs-12">
             <h2><b>Topics of interest</b></h2>
@@ -237,8 +190,7 @@
         </div>
         <div class="row">
           <div class="col-xs-12">
-            <p>The submissions are expected to deal with visual perception and processing tasks which include but are
-              not limited to:</p>
+            <p>The submissions are expected to deal with visual perception and processing tasks which include but are not limited to:</p>
             <ul>
               <li>Applications of computer vision on UAVs</li>
               <li>Strategies for searching of UAVs based on NIR and/or VIS data</li>
@@ -249,35 +201,38 @@
               <li>Fine-grained object recognition</li>
               <li>Real-time deep learning inference</li>
               <li>Infrared image and video analysis</li>
-              <li>Multimodal fusion techniques</li>
-            </ul>
+              <li>Multimodal fusion techniques</li></ul>
           </div>
         </div>
-
+        
         <p><br /></p>
 
-        <div class="row">
+<div class="row">
           <div class="col-xs-12">
             <h2><b>Contact</b></h2>
-            <p>Please feel free to send any question or comments to:
-              <a href="mailto:zhaojian90@u.nus.edu" style="color: blue;">zhaojian90@u.nus.edu</a>,
-              <a href="mailto:g_wang@foxmail.com" style="color: blue;">g_wang@foxmail.com</a>.
-            </p>
+			<p>Please feel free to send any question or comments to:
+			  <a href="mailto:zhaojian90@u.nus.edu" style="color: blue;">zhaojian90@u.nus.edu</a>, 
+			  <a href="mailto:qiang.wang@nlpr.ia.ac.cn" style="color: blue;">qiang.wang@nlpr.ia.ac.cn</a>.
+			</p>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12">
-            <h2><b>SPONSORS</b></h2>
-            <p style=" text-align:center;">
-              <img src="logo.jpg" style=" height:60px;" />
-            </p>
-          </div>
-        </div>
-        <p><br /></p>
-      </div>
+        </div>			
+ <div class="row">
+    <div class="col-xs-12">
+		  <h2><b>SPONSORS</b></h2>
+		  <p>
+ 			  <img src="oppo.png" style=" height:60px;" />
+			  <img src="baidu.png" style=" height:60px;" />
+        <img src="360.png" style=" height:60px;" />
+        <img src="jmct.png" style=" height:60px;" />
+        <img src="zanzhushang4.png" style=" height:60px;" />
+		  </p>
+    </div>
+  </div>		
+    <p><br/></p>
+	  </div>
     </div>
     <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-</body>
+  </body>
 
 </html>
