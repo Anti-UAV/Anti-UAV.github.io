@@ -1,222 +1,268 @@
 <!DOCTYPE html>
 <html>
-  
-  <head>
-  
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>1st Anti-UAV Challenge</title>
-    <meta name="description" content="Catch UAVs that Want to Watch You ---">
-	
-    <!--Open Graph Related Stuff-->
-    <meta property="og:title" content="1st Anti-UAV Challenge" />
-    <meta property="og:url" content="https://Anti-UAV.github.io/" />
-    <meta property="og:description" content="Catch UAVs that Want to Watch You ---" />
-    <meta property="og:site_name" content="Anti-UAV" />
-    <meta property="og:image" content="" />
-    <meta property="og:image:url" content="" />
-	
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
-    <link rel="stylesheet" type="text/css" href="/css/animate.min.css">
-    <!--<link rel="stylesheet" type="text/css" href="/css/font-awesome.css">-->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900"> 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/lineabasic.css">
-    <link rel="stylesheet" type="text/css" href="/css/magnific-popup.css">
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
-	
-  </head>
-  
-  <body>
-	
-	<nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="row">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-		    <a target="_blank" href="http://cvpr2020.thecvf.com/">
-              <img src="/img/CVPRLogo.png" alt="FOLIO LOGO" style=" height:30px;" />
-            </a>
-          </div>
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
-            <ul class="nav navbar-nav navbar-right" style="padding-top:10px;">
-              <li><a href="/">Home</a></li>
-              <li><a href="/schedule">Schedule</a></li>
-              <li><a href="/speakers">Speakers</a></li>
-			  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Challenge <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-			<li><a href="/Evaluate" target="_blank">Evaluate</a></li>
-                  <li><a href="/dataset" target="_blank">DATASET</a></li>
-                  <li><a href="/leaderboard" target="_blank">LEADERBOARD</a></li>
-                </ul>
-              </li>
-              <li><a href="/submission">Submission</a></li>
-              <li><a href="/organizers">Organizers</a></li>
-            </ul>
-          </div>
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>1st Anti-UAV Challenge</title>
+  <meta name="description" content="Catch UAVs that Want to Watch You ---">
+
+  <!--Open Graph Related Stuff-->
+  <meta property="og:title" content="1st Anti-UAV Challenge" />
+  <meta property="og:url" content="https://Anti-UAV.github.io/" />
+  <meta property="og:description" content="Catch UAVs that Want to Watch You ---" />
+  <meta property="og:site_name" content="Anti-UAV" />
+  <meta property="og:image" content="" />
+  <meta property="og:image:url" content="" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
+  <link rel="stylesheet" type="text/css" href="/css/animate.min.css">
+  <!--<link rel="stylesheet" type="text/css" href="/css/font-awesome.css">-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/lineabasic.css">
+  <link rel="stylesheet" type="text/css" href="/css/magnific-popup.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="row">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a target="_blank" href="http://cvpr2020.thecvf.com/">
+            <img src="/img/CVPRLogo.png" alt="FOLIO LOGO" style=" height:30px;" />
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right" style="padding-top:10px;">
+            <li><a href="/">Home</a></li>
+            <li><a href="/schedule">Schedule</a></li>
+            <li><a href="/speakers">Speakers</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Challenge <span
+                  class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/Evaluate" target="_blank">Evaluate</a></li>
+                <li><a href="/dataset" target="_blank">DATASET</a></li>
+                <!-- <li><a href="/leaderboard" target="_blank">LEADERBOARD</a></li> -->
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">LEADERBOARD<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/leaderboard" target="_blank">Leaderboard of the 1st Anti-UAV</a></li>
+                    <li><a href="/leaderboard2" target="_blank">Leaderboard of the 2nd Anti-UAV</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="/submission">Submission</a></li>
+            <li><a href="/organizers">Organizers</a></li>
+          </ul>
         </div>
       </div>
-    </nav>
-	
-    <div class="container">
-      <div class="page-content">
-        
-		<p><br /></p>
-		  
-	<style type="text/css">
-	*{margin:0;padding;0;}
-	div{position:relative;}
-	div w{position:absolute;right:40px;top:40px;color:white;}
-	      </style>
-	<div>
-              <img src="/img/CVPR.jpg" />
-		<font size="6"><strong><w>The 1<sup>st</sup> Anti-UAV Workshop & Challenge</w></strong></font>
-		<font size="6"><w><br><br><br>June 14th - 19th, 2020 Seattle, WA<br/><br/><br/></w></font>
-	</div>	
-        <hr />	 
-        <div class="row">
-          <div class="col-xs-12">
-            <h2><b><p style="text-align: center">Schedule</p></b></h2>
-            <div class="section-title2">
-                     <h2><a href="https://zoom.us/j/97663667576?pwd=KzM2UmdMbEIxVkJLVEtWSFhrSUZmUT09" ><p style="text-align: center">[Zoom Entrance]</p></a></h2>
-            </div>
-            <p>
-            <table class="table table-striped">
-              <tbody>
-<div class="trend-entry d-flex">
-                    <div class="trend-contents">
-                        <table class="table  table-hover" style="font-size:14px">
-                        <thead>
-			<tr>
-                            <th width="110" scope="col"> Date    </th>
-                            <th width="488" scope="col"> June 14 Sunday 2020 <br/>
-                          (Pacific Time, SF Time) </th>
-                            <th width="131" scope="col"> Speaker</th>
-                            <th width="507" scope="col"> Topic</th>
-                        </tr>
-				</div>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>13:30-14:00</td>
-                            <td>Institute of North Electronic Equipment</td>
-                            <td>Jian Zhao</td>
-                            <td>Opening Remarks and Welcome</td>
-                        </tr>
-                        <tr>
-                            <td>14:00-14:30</td>
-                            <td>Institute of North Electronic Equipmen</td>
-                            <td>Jian Zhao</td>
-                            <td>The Anti-UAV Challenge Introduction and Results</td>
-                        </tr>
-                        <tr>
-                            <td>14:30-14:40</td>
-                            <td>Institute of Information Engineering, Chinese Academy of Sciences</td>
-                            <td>Chunhui Zhang</td>
-                            <td><strong>Oral talk 1: </strong>1st-Place Award of Anti-UAV Challenge [<a href="https://anti-uav.github.io/workshop/111-talk.pdf">ppt</a>][<a href="https://anti-uav.github.io/workshop/111-oral.mp4">video</a>]</td>
-                        </tr>
-                        <tr>
-                            <td height="17">14:40-15:10</td>
-                            <td>Professor at Stony Brook University</td>
-                            <td>Haibin Ling</td>
-                            <td><strong>Invited talk 1: </strong>Tracking and Detection in UAV Imagery [<a href="https://www3.cs.stonybrook.edu/~hling/tmp/66-oral.mp4">video</a>]</td>
-                        </tr>
-                        <tr>
-                            <td>15:40-15:50</td>
-                            <td>Xi’an Jiaotong University</td>
-                            <td><table>
-                              <tbody>
-                                <tr>
-                                  <td>Xingjie Zhao</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                            </td>
-                            <td><strong>Oral talk 2: </strong>2nd-Place Award of Anti-UAV Challenge [<a href="https://anti-uav.github.io/workshop/222-talk.pdf">ppt</a>][<a href="https://anti-uav.github.io/workshop/222-oral.mp4">video</a>]</td>
-                        </tr>
-                        <tr>
-                            <td>15:50-16:20</td>
-                            <td>Research Scientist at Google</td>
-                            <td>Ming-Hsuan Yang</td>
-                            <td><strong>Invited talk 2: </strong>Learning to Detect and Segment Objects Across Domains [<a href="/workshop/CVPR2020_Anti_UAV_Talk_Ming-Hsuan_Yang.pdf">ppt</a>][<a href="/workshop/CVPR2020_Anti_UAV_Talk_Ming-Hsuan_Yang.mp4">video</a>]</td>
-                        </tr>
-                        <tr>
-                            <td>16:20-16:30</td>
-                            <td>Institute of Automation, Chinese Academy of Sciences</td>
-                            <td>Linyu Zheng</td>
-                            <td><strong>Oral talk 3: </strong>3rd-Place Award of Anti-UAV Challenge [<a href="https://anti-uav.github.io/workshop/333-tal.pdf">ppt</a>][<a href="https://anti-uav.github.io/workshop/333-oral.mp4">video</a>]</td>
-                        </tr>
-                        <tr>
-                            <td>16:30-16:40</td>
-                            <td>Middle East Technical University</td>
-                            <td>Aybora Koksal</td>
-                            <td><strong>Oral talk 4: Best Paper Award </strong>[<a href="http://openaccess.thecvf.com/content_CVPRW_2020/papers/w69/Koksal_Effect_of_Annotation_Errors_on_Drone_Detection_With_YOLOv3_CVPRW_2020_paper.pdf">paper</a>][<a href="https://anti-uav.github.io/workshop/13-talk.pdf">ppt</a>][<a href="https://anti-uav.github.io/workshop/13-oral.mp4">video</a>]</td>
-                        </tr>
-			    </tbody>
-                    </table>
-			    </div>
+    </div>
+  </nav>
 
-</div>
-<div class="col-xs-12">
-            <h2><b><p style="text-align: center">Important Dates</p></b></h2>
+  <div class="container">
+    <div class="page-content">
+
+      <p><br /></p>
+
+      <style type="text/css">
+        * {
+          margin: 0;
+          padding: 0;
+        }
+
+        div {
+          position: relative;
+        }
+
+        div w {
+          position: absolute;
+          right: 40px;
+          top: 40px;
+          color: white;
+        }
+      </style>
+      <div>
+        <img src="/img/CVPR.jpg" />
+        <font size="6"><strong>
+            <w>The 1<sup>st</sup> Anti-UAV Workshop & Challenge</w>
+          </strong></font>
+        <font size="6">
+          <w><br><br><br>June 14th - 19th, 2020 Seattle, WA<br /><br /><br /></w>
+        </font>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-xs-12">
+          <h2><b>
+              <p style="text-align: center">Schedule</p>
+            </b></h2>
+          <div class="section-title2">
+            <h2><a href="https://zoom.us/j/97663667576?pwd=KzM2UmdMbEIxVkJLVEtWSFhrSUZmUT09">
+                <p style="text-align: center">[Zoom Entrance]</p>
+              </a></h2>
           </div>
-                <div class="trend-entry d-flex">
-                    <div class="trend-contents">
-                        <table class="table  table-hover" style="font-size:14px">
-                        <thead>
-                        <tr>
-                            <th width="140" scope="col">Challenge Open</th>
-                            <th width="400" scope="col"><table>
-                              <tbody>
-                                <tr>
-                                  <td>February 15th 2020</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>Results Submission</td>
-                            <td>April 15th 2020 (24:00 CET - midnight)</td>
-                        </tr>
-                        <tr>
-                            <td>Paper Submission</td>
-                            <td>March 31st 2020 (24:00 CET - midnight) Extended</td> 
-                        </tr>
-                        <tr>
-                            <td>Notification</td>
-                            <td>April 8th 2020L</td>
-                        </tr>
-                        <tr>
-                            <td>Camera-ready</td>
-                            <td><table>
-                              <tbody>
-                                <tr>
-                                  <td> April 16th 2020</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                            </td>
-                        <tr>
-                            <td>Workshop</td>
-                            <td>June 19th 2020 (Afternoon)</td>
-                        </tbody>
-                    </table>
-                    </div>
+          <p>
+          <table class="table table-striped">
+            <tbody>
+              <div class="trend-entry d-flex">
+                <div class="trend-contents">
+                  <table class="table  table-hover" style="font-size:14px">
+                    <thead>
+                      <tr>
+                        <th width="110" scope="col"> Date </th>
+                        <th width="488" scope="col"> May 1st saturday 2021 <br /></th>
+                        <th width="131" scope="col"> Speaker</th>
+                        <th width="507" scope="col"> Topic</th>
+                      </tr>
                 </div>
+                </thead>
+            <tbody>
+              <tr>
+                <td>8:30-08:40</td>
+                <td></td>
+                <td></td>
+                <td>Opening Remarks and Welcome</td>
+              </tr>
+              <tr>
+                <td>08:40-09:10</td>
+                <td></td>
+                <td></td>
+                <td>The 2nd Anti-UAV challenge introduction and results</td>
+              </tr>
+              <tr>
+                <td>09:10-09:25</td>
+                <td></td>
+                <td></td>
+                <td><strong>Oral talk 1: </strong>1st-Place Award of the 2nd Anti-UAV Challenge
+                </td>
+              </tr>
+              <tr>
+                <td height="17">09:25-09:55</td>
+                <td>Professor at Stony Brook University</td>
+                <td>Haibin Ling</td>
+                <td><strong>Invited talk 1: </strong></td>
+              </tr>
+              <tr>
+                <td>09:55-10:10</td>
+                <td></td>
+                <td>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+                <td><strong>Oral talk 2: </strong>2nd-Place Award of the 2nd Anti-UAV Challenge
+                </td>
+              </tr>
+              <tr>
+                <td>10:10-10:40</td>
+                <td></td>
+                <td></td>
+                <td>Poster session and coffee break</td>
+              </tr>
+              <tr>
+                <td>10:40-11:10</td>
+                <td>Professor at University of California,Merced</td>
+                <td>Ming-Hsuan Yang</td>
+                <td><strong>Invited talk 2:</strong>3rd-Place Award of Anti-UAV Challenge</td>
+              </tr>
+              <tr>
+                <td>11:10-11:25</td>
+                <td></td>
+                <td></td>
+                <td><strong>Oral talk 3:</strong>3rd-Place Award of the 2nd Anti-UAV Challenge</td>
+              </tr>
+              <tr>
+                <td>11:25-11:40</td>
+                <td></td>
+                <td></td>
+                <td><strong>Oral talk 4:</strong>Best Paper Award</td>
+              </tr>
+              <tr>
+                <td>11:40-12:00</td>
+                <td></td>
+                <td></td>
+                <td>Awards & Future Plans</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
-            
-        <!--
+      </div>
+      <div class="col-xs-12">
+        <h2><b>
+            <p style="text-align: center">Important Dates</p>
+          </b></h2>
+      </div>
+      <div class="trend-entry d-flex">
+        <div class="trend-contents">
+          <table class="table  table-hover" style="font-size:14px">
+            <thead>
+              <tr>
+                <th width="140" scope="col">Challenge Open</th>
+                <th width="400" scope="col">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td>May 1st, 2021</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Results Submission</td>
+                <td>June 1st, 2021 (24:00 CET-midnight) -> June 20th, 2021 (24:00 CET- midnight)</td>
+              </tr>
+              <tr>
+                <td>Paper Submission</td>
+                <td>June 1st, 2021 -> June 30th, 2021 (24:00 CET-midnight)</td>
+              </tr>
+              <tr>
+                <td>Notification</td>
+                <td>July 21st, 2021</td>
+              </tr>
+              <tr>
+                <td>Camera-ready</td>
+                <td>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td>August 15th, 2021</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              <tr>
+                <td>Workshop</td>
+                <td>October 17th, 2021</td>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+      <!--
 		  
         <div class="row">
           <div class="col-xs-12">
@@ -274,13 +320,13 @@
           </div>
         </div>
         -->
-        <p><br /></p>
+      <p><br /></p>
 
-	  </div>
     </div>
+  </div>
 
-     <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-  </body>
+  <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</body>
 
 </html>

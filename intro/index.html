@@ -1,175 +1,269 @@
 <!DOCTYPE html>
 <html>
-  
-  <head>
-  
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>1st Anti-UAV Challenge</title>
-    <meta name="description" content="Catch UAVs that Want to Watch You ---">
-	
-    <!--Open Graph Related Stuff-->
-    <meta property="og:title" content="1st Anti-UAV Challenge" />
-    <meta property="og:url" content="https://Anti-UAV.github.io/" />
-    <meta property="og:description" content="Catch UAVs that Want to Watch You ---" />
-    <meta property="og:site_name" content="Anti-UAV" />
-    <meta property="og:image" content="" />
-    <meta property="og:image:url" content="" />
-	
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
-    <link rel="stylesheet" type="text/css" href="/css/animate.min.css">
-    <!--<link rel="stylesheet" type="text/css" href="/css/font-awesome.css">-->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900"> 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/lineabasic.css">
-    <link rel="stylesheet" type="text/css" href="/css/magnific-popup.css">
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
-	
-  </head>
-  
-  <body>
-  <table width="100%" border="0">
-          <tr>
-            <th scope="col" width="10%"></th>
-            <th scope="col">
-			<table width="100%" border="0">
-              <tr>
 
-           <th scope="col" width="30%"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-                <p><a target="_blank" href="http://cvpr2020.thecvf.com/"> <img src="/img/CVPRLogo.png" alt="FOLIO LOGO" style=" height:60px;" /> </a> </th>
-                <th scope="col" width="10%"><a href="/">Home</a></th>
-                  <th scope="col" width="10%"><a href="/schedule">Schedule</a></th>
-                  <th scope="col" width="10%"><a href="/speakers">Speakers</a></th>
-                  <th scope="col" width="10%" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Challenge <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-			    <li><a href="/Evaluate" target="_blank">Evaluate</a></li>
-                      <li><a href="/dataset" target="_blank">DATASET</a></li>
-                    <li><a href="/leaderboard" target="_blank">LEADERBOARD</a></li>
-		    
-                  </ul>              </th>
-                  <th scope="col" width="10%"><a href="/submission">Submission</a></th>
-                  <th scope="col" width="10%"><a href="/organizers">Organizers</a></th>
-                        <th scope="col" width="1"></th>
-              </tr>
-            </table></th>
-            <th scope="col" width="10%"></th>
-          </tr>
+<head>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>1st Anti-UAV Challenge</title>
+  <meta name="description" content="Catch UAVs that Want to Watch You ---">
+
+  <!--Open Graph Related Stuff-->
+  <meta property="og:title" content="1st Anti-UAV Challenge" />
+  <meta property="og:url" content="https://Anti-UAV.github.io/" />
+  <meta property="og:description" content="Catch UAVs that Want to Watch You ---" />
+  <meta property="og:site_name" content="Anti-UAV" />
+  <meta property="og:image" content="" />
+  <meta property="og:image:url" content="" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
+  <link rel="stylesheet" type="text/css" href="/css/animate.min.css">
+  <!--<link rel="stylesheet" type="text/css" href="/css/font-awesome.css">-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/lineabasic.css">
+  <link rel="stylesheet" type="text/css" href="/css/magnific-popup.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+</head>
+
+<body>
+  <table width="100%" border="0">
+    <tr>
+      <th scope="col" width="10%"></th>
+      <th scope="col">
+        <table width="100%" border="0">
           <tr>
-            <td></td>
-            <td> 
-			<hr />
-           <style type="text/css">
-	*{margin:0;padding;0;}
-	div{position:relative;}
-	div w{position:absolute;right:40px;top:40px;color:white;}
-	      </style>
-	<div>
-              <img src="/img/CVPR.jpg" />
-		<font size="6"><strong><w>The 1<sup>st</sup> Anti-UAV Workshop & Challenge</w></strong></font>
-		<font size="6"><w><br><br><br>June 14th - 19th, 2020 Seattle, WA<br/><br/><br/></w></font>
-	</div>
-          </td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td><div class="row" id="intro">
-            <div class="col-xs-12">
-              <h2><b>Description of the 1<sup>st</sup> Anti-UAV Challenge</b></h2>
-            </div>
-          </div></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td><div class="row">
-            <div class="col-xs-12">
-              <p></p>
-              <p>Recently, unmanned aerial vehicle (UAV) is growing rapidly in a wide range of consumer communications and networks with their autonomy, flexibility, and a broad range of application domains. UAV applications offer possible civil and public domain applications in which single or multiple UAVs may be used. At the same time, we also need to be aware of the potential threat to our lives caused by UAV intrusion. Earlier this year, multiple instances of drone sightings halted air traffic at airports, leading to significant economic losses for airlines.</p>
-              <p><b>This workshop focuses on state-of-the-art anti-UAV systems in a bid to safeguard flights.</b> Historically, radar is certainly a very mature technology for detecting traditional incoming airborne threats. However, today, these small drones are challenging for radar to accurately and reliably detect. It is due to the combination of a very small radar cross section and the erratic flight paths of these UAV drones that make trustworthy detection almost impossible. Indeed, how to use computer vision algorithms to perceive UAVs is a crucial part of the whole defense system.</p>
-              <p>The current computer vision research for UAV lacks a high-quality benchmark in dynamic environments. To mitigate this gap, this workshop presents a benchmark dataset and evaluation methodology for the area of detecting and tracking UAVs.<b style="color:red;"> The dataset consists of sixty high quality, Full HD video sequences (both RGB and Thermal Infrared), spanning multiple occurrences of multi-scale UAVs.</b><b> This workshop also encourages participants to establish approaches to fully automatic detection and tracking of UAVs in videos.</b> Although solutions can be derived from the off-the-shelf detection and tracking algorithms, the training and customizations of them for UAVs pose unique challenges. Specifically, how to detect and track fast-moving drones in noisy (e.g., occlusion by cloud and buildings, and fake targets like kites, balloons, birds, etc.) environments and how to use infrared images to locate UAVs in total darkness are not explored enough.</p>
-              <p>This workshop will bring together academic and industrial experts in the field of UAVs to discuss the techniques and applications of tracking UAVs. Participants are invited to submit their original contributions, surveys, and case studies that address the works of UAV’s detection and tracking issues.</p>
-            </div>
-          </div></td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td><div class="row">
-            <div align="center" class="col-md-12">
-              <img src="1.png" /></div>
-          </div></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td><div class="row" id="topic">
-            <div class="col-xs-12">
-              <h2><b>Topics of interest</b></h2>
-            </div>
-          </div></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td> <div class="row">
-            <div class="col-xs-12">
-              <p>The submissions are expected to deal with visual perception and processing tasks which include but are not limited to:</p>
-              <ul>
-                <li>Applications of computer vision on UAVs</li>
-                <li>Strategies for searching of UAVs based on NIR and/or VIS data</li>
-                <li>Spectrum sensing techniques for UAVs detection</li>
-                <li>Localization and open-set identification of UAVs</li>
-                <li>Scene understanding for UAVs</li>
-                <li>Small/tiny object detection and tracking techniques</li>
-                <li>Fine-grained object recognition</li>
-                <li>Real-time deep learning inference</li>
-                <li>Infrared image and video analysis</li>
-                <li>Multimodal fusion techniques</li></ul>
-            </div>
-          </div></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td><div class="row">
-            <div class="col-xs-12">
-              <h2><b>Relates to previous workshops at CVPR/ICCV/ECCV</b></h2>
-	        </div>
-          </div></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td><div class="row">
-            <div class="col-xs-12">
-              <ul>
-                <li>ICCV2017 workshop:<ul><li>1st International Workshop on Vision for UAVs</li></ul></li>
-                <li>CVPR2018 workshop:<ul><li>Computer Vision for UAVs</li></ul></li>
-                <li>ECCV2018 workshop:<ul><li>2nd International Workshop on Computer Vision for UAVs</li><li>Vision Meets Drone: A Challenge</li></ul></li>
-                <li>CVPR2019 workshop:<ul><li>3rd International Workshop on Vision for UAVs</li></ul></li>
-                <li>ICCV2019 workshop:<ul><li>Vision Meets Drones 2019: A Challenge</li></ul></li>
-			  </ul>
-              <p>With the increasing popularity of UAVs, a large number of workshops about UAVs have been held (listed above). They mainly focus on visual tracking, SLAM, depth perception from drone perspective. Our workshop takes a different perspective, making UAVs as tracking targets, and provides a large-scale dataset to promote deep network learning for UAVs. In addition, the proposed workshop also aims at tiny object detection and tracking in the wild which is more challenging, more practical, and more useful for real applications. Thus our workshop will bridge the needs of industry and research in academia, and may accelerate the process of these computer vision technologies being used in real applications.</p>
-            </div>
-          </div></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td><div class="col-xs-12">
-            <h2><b>Contact</b></h2>
-			  <p>Please feel free to send any question or comments to:
-			    <a href="mailto:zhaojian90@u.nus.edu" style="color: blue;">zhaojian90@u.nus.edu</a>, 
-			    <a href="mailto:qiang.wang@nlpr.ia.ac.cn" style="color: blue;">qiang.wang@nlpr.ia.ac.cn</a>.</p>
-            </div>  </td>
-            <td></td>
+
+            <th scope="col" width="30%"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span
+                  class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+              <p><a target="_blank" href="http://cvpr2020.thecvf.com/"> <img src="/img/CVPRLogo.png" alt="FOLIO LOGO"
+                    style=" height:60px;" /> </a>
+            </th>
+            <th scope="col" width="10%"><a href="/">Home</a></th>
+            <th scope="col" width="10%"><a href="/schedule">Schedule</a></th>
+            <th scope="col" width="10%"><a href="/speakers">Speakers</a></th>
+            <th scope="col" width="10%" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Challenge
+                <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/Evaluate" target="_blank">Evaluate</a></li>
+                <li><a href="/dataset" target="_blank">DATASET</a></li>
+                <li><a href="/leaderboard" target="_blank">LEADERBOARD</a></li>
+
+              </ul>
+            </th>
+            <th scope="col" width="10%"><a href="/submission">Submission</a></th>
+            <th scope="col" width="10%"><a href="/organizers">Organizers</a></th>
+            <th scope="col" width="1"></th>
           </tr>
         </table>
-	   
-  </body>
+      </th>
+      <th scope="col" width="10%"></th>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <hr />
+        <style type="text/css">
+          * {
+            margin: 0;
+            padding: 0;
+          }
+
+          div {
+            position: relative;
+          }
+
+          div w {
+            position: absolute;
+            right: 40px;
+            top: 40px;
+            color: white;
+          }
+        </style>
+        <div>
+          <img src="/img/CVPR.jpg" />
+          <font size="6"><strong>
+              <w>The 1<sup>st</sup> Anti-UAV Workshop & Challenge</w>
+            </strong></font>
+          <font size="6">
+            <w><br><br><br>June 14th - 19th, 2020 Seattle, WA<br /><br /><br /></w>
+          </font>
+        </div>
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <div class="row" id="intro">
+          <div class="col-xs-12">
+            <h2><b>Description of the 2<sup>st</sup> Anti-UAV Challenge</b></h2>
+          </div>
+        </div>
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <div class="row">
+          <div class="col-xs-12">
+            <p></p>
+            <p>Civil unmanned aerial vehicle (UAV) is growing rapidly in a wide range of consumer
+              communications and networks with their autonomy, flexibility, and a broad range of
+              application domains. UAV applications offer possible civil and public domain applications in
+              which single or multiple UAVs may be used. Nevertheless, we should also be aware of the
+              potential threat to our lives caused by UAV intrusion, since UAVs can also be used to
+              conduct physical attacks (e.g., via explosives) and cyber-attacks (e.g., hacking a critical
+              infrastructure). Moreover, unauthorized UAVs are a danger to civilian aircraft. There have
+              been multiple instances of drone sightings halted air traffic at airports, leading to significant
+              economic losses for airlines.</p>
+            <p>Historically, radar is certainly a very powerful technology for detecting traditional
+              incoming airborne threats. However, these comparatively small drones are difficult for radar
+              to accurately detect, because they have very small radar cross-sections and erratic flight paths.
+              Therefore, how to use computer vision algorithms to perceive UAVs is a crucial part of the
+              whole UAV-defense system.</p>
+            <p>Traditional computer vision research for UAV detection and tracking lacks a high-quality
+              benchmark in dynamic environments. To mitigate this gap, we held the 1st International
+              Workshop on Anti-UAV Challenge at CVPR 2020, releasing a dataset consisting of 160
+              video sequences (both RGB and infrared). The workshop attracted attention from researchers
+              all over the world. Many submitted solutions outperform the baseline method, making great
+              contributions to addressing the anti-UAV problem. The 2nd anti-UAV challenge extends the
+              benchmark dataset to 250 high-quality, full HD thermal infrared video sequences, spanning
+              multiple occurrences of multi-scale (i.e., large, small and tiny, as shown in Fig. 1) UAVs.
+              The workshop encourages participants to develop automated methods that can detect and
+              track UAVs in thermal infrared videos with high accuracy. Particularly, algorithms that can
+              detect and track fast-moving drones in complex environments (e.g., occlusion by
+              cloud/buildings/trees, and fake targets like kites, balloons, birds, etc.) are highly expected.
+            </p>
+            <p>This workshop will bring together academic and industrial experts in the field of UAVs
+              to discuss the techniques and applications of tracking UAVs. Participants are invited to
+              submit their original contributions, surveys, and case studies that address the works of
+              UAV’s detection and tracking issues.</p>
+            <p style="text-align:center;">Figure 1 Illustrations of civil UAVs. (a) Large civil UAV; (b) Small civil
+              UAV; (c) Tiny civil UAV.</p>
+
+          </div>
+        </div>
+      </td>
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <div class="row">
+          <div align="center" class="col-md-12">
+            <img src="1.png" />
+          </div>
+        </div>
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <div class="row" id="topic">
+          <div class="col-xs-12">
+            <h2><b>Topics of interest</b></h2>
+          </div>
+        </div>
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <div class="row">
+          <div class="col-xs-12">
+            <p>The submissions are expected to deal with visual perception and processing tasks which include but are
+              not limited to:</p>
+            <ul>
+              <li>Applications of computer vision on anti-UAVs</li>
+              <li>Strategies for searching UAVs based on RGB/NIR data</li>
+              <li>Spectrum sensing techniques for UAVs detection</li>
+              <li>Localization and open-set identification of UAVs</li>
+              <li>Scene understanding for UAVs</li>
+              <li>Small/tiny object detection and tracking techniques</li>
+              <li>Fine-grained object recognition</li>
+              <li>Real-time deep learning inference</li>
+              <li>Infrared image and video analysis</li>
+          </div>
+        </div>
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <div class="row">
+          <div class="col-xs-12">
+            <h2><b>Relates to previous workshops at CVPR/ICCV/ECCV</b></h2>
+          </div>
+        </div>
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <div class="row">
+          <div class="col-xs-12">
+            <ul>
+              <li>ICCV2017 workshop:<ul>
+                  <li>1st International Workshop on Vision for UAVs</li>
+                </ul>
+              </li>
+              <li>CVPR2018 workshop:<ul>
+                  <li>Computer Vision for UAVs</li>
+                </ul>
+              </li>
+              <li>ECCV2018 workshop:<ul>
+                  <li>2nd International Workshop on Computer Vision for UAVs</li>
+                  <li>Vision Meets Drone: A Challenge</li>
+                </ul>
+              </li>
+              <li>CVPR2019 workshop:<ul>
+                  <li>3rd International Workshop on Vision for UAVs</li>
+                </ul>
+              </li>
+              <li>ICCV2019 workshop:<ul>
+                  <li>Vision Meets Drones 2019: A Challenge</li>
+                </ul>
+              </li>
+            </ul>
+            <p>With the increasing popularity of UAVs, a large number of workshops about UAVs have been held (listed
+              above). They mainly focus on visual tracking, SLAM, depth perception from drone perspective. Our workshop
+              takes a different perspective, making UAVs as tracking targets, and provides a large-scale dataset to
+              promote deep network learning for UAVs. In addition, the proposed workshop also aims at tiny object
+              detection and tracking in the wild which is more challenging, more practical, and more useful for real
+              applications. Thus our workshop will bridge the needs of industry and research in academia, and may
+              accelerate the process of these computer vision technologies being used in real applications.</p>
+          </div>
+        </div>
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <div class="col-xs-12">
+          <h2><b>Contact</b></h2>
+          <p>Please feel free to send any question or comments to:
+            <a href="mailto:zhaojian90@u.nus.edu" style="color: blue;">zhaojian90@u.nus.edu</a>,
+            <a href="mailto:g_wang@foxmail.com" style="color: blue;">g_wang@foxmail.com</a>.
+          </p>
+        </div>
+      </td>
+      <td></td>
+    </tr>
+  </table>
+
+</body>
 
 </html>
