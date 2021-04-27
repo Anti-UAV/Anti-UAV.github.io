@@ -59,8 +59,14 @@
               <ul class="dropdown-menu">
                 <li><a href="/Evaluate" target="_blank">Evaluate</a></li>
                 <li><a href="/dataset" target="_blank">DATASET</a></li>
-                <li><a href="/leaderboard" target="_blank">LEADERBOARD</a></li>
-
+                <!-- <li><a href="/leaderboard" target="_blank">LEADERBOARD</a></li> -->
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">LEADERBOARD<span
+                      class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/leaderboard" target="_blank">Leaderboard of the 1st Anti-UAV</a></li>
+                    <li><a href="/leaderboard2" target="_blank">Leaderboard of the 2nd Anti-UAV</a></li>
+                  </ul>
+                </li>
               </ul>
             </li>
             <li><a href="/submission">Submission</a></li>
@@ -78,7 +84,7 @@
       <style type="text/css">
         * {
           margin: 0;
-          padding:0;
+          padding: 0;
         }
 
         div {
@@ -98,7 +104,7 @@
             <w>The 2<sup>st</sup> Anti-UAV Workshop & Challenge</w>
           </strong></font>
         <font size="6">
-          <w><br><br><br>May 1st - June 1st, 2021 Seattle, WA<br /><br /><br /></w>
+          <w><br><br><br>May 1st-October 17th, 2021 Montreal, CA<br /><br /><br /></w>
         </font>
       </div>
       <p><br /></p>
@@ -204,36 +210,36 @@
           <div class="col-xs-12">
             <p></p>
             <p>Civil unmanned aerial vehicle (UAV) is growing rapidly in a wide range of consumer
-            communications and networks with their autonomy, flexibility, and a broad range of
-            application domains. UAV applications offer possible civil and public domain applications in
-            which single or multiple UAVs may be used. Nevertheless, we should also be aware of the
-            potential threat to our lives caused by UAV intrusion, since UAVs can also be used to
-            conduct physical attacks (e.g., via explosives) and cyber-attacks (e.g., hacking a critical
-            infrastructure). Moreover, unauthorized UAVs are a danger to civilian aircraft. There have
-            been multiple instances of drone sightings halted air traffic at airports, leading to significant
-            economic losses for airlines.</p>
+              communications and networks with their autonomy, flexibility, and a broad range of
+              application domains. UAV applications offer possible civil and public domain applications in
+              which single or multiple UAVs may be used. Nevertheless, we should also be aware of the
+              potential threat to our lives caused by UAV intrusion, since UAVs can also be used to
+              conduct physical attacks (e.g., via explosives) and cyber-attacks (e.g., hacking a critical
+              infrastructure). Moreover, unauthorized UAVs are a danger to civilian aircraft. There have
+              been multiple instances of drone sightings halted air traffic at airports, leading to significant
+              economic losses for airlines.</p>
             <p>Historically, radar is certainly a very powerful technology for detecting traditional
-            incoming airborne threats. However, these comparatively small drones are difficult for radar
-            to accurately detect, because they have very small radar cross-sections and erratic flight paths.
-            Therefore, how to use computer vision algorithms to perceive UAVs is a crucial part of the
-            whole UAV-defense system.</p>
+              incoming airborne threats. However, these comparatively small drones are difficult for radar
+              to accurately detect, because they have very small radar cross-sections and erratic flight paths.
+              Therefore, how to use computer vision algorithms to perceive UAVs is a crucial part of the
+              whole UAV-defense system.</p>
             <p>Traditional computer vision research for UAV detection and tracking lacks a high-quality
-            benchmark in dynamic environments. To mitigate this gap, we held the 1st International
-            Workshop on Anti-UAV Challenge at CVPR 2020, releasing a dataset consisting of 160
-            video sequences (both RGB and infrared). The workshop attracted attention from researchers
-            all over the world. Many submitted solutions outperform the baseline method, making great
-            contributions to addressing the anti-UAV problem. The 2nd anti-UAV challenge extends the
-            benchmark dataset to 250 high-quality, full HD thermal infrared video sequences, spanning
-            multiple occurrences of multi-scale (i.e., large, small and tiny, as shown in Fig. 1) UAVs.
-            The workshop encourages participants to develop automated methods that can detect and
-            track UAVs in thermal infrared videos with high accuracy. Particularly, algorithms that can
-            detect and track fast-moving drones in complex environments (e.g., occlusion by
-            cloud/buildings/trees, and fake targets like kites, balloons, birds, etc.) are highly expected.
+              benchmark in dynamic environments. To mitigate this gap, we held the 1st International
+              Workshop on Anti-UAV Challenge at CVPR 2020, releasing a dataset consisting of 160
+              video sequences (both RGB and infrared). The workshop attracted attention from researchers
+              all over the world. Many submitted solutions outperform the baseline method, making great
+              contributions to addressing the anti-UAV problem. The 2nd anti-UAV challenge extends the
+              benchmark dataset to 250 high-quality, full HD thermal infrared video sequences, spanning
+              multiple occurrences of multi-scale (i.e., large, small and tiny, as shown in Fig. 1) UAVs.
+              The workshop encourages participants to develop automated methods that can detect and
+              track UAVs in thermal infrared videos with high accuracy. Particularly, algorithms that can
+              detect and track fast-moving drones in complex environments (e.g., occlusion by
+              cloud/buildings/trees, and fake targets like kites, balloons, birds, etc.) are highly expected.
             </p>
             <p>This workshop will bring together academic and industrial experts in the field of UAVs
-            to discuss the techniques and applications of tracking UAVs. Participants are invited to
-            submit their original contributions, surveys, and case studies that address the works of
-            UAV’s detection and tracking issues.</p>
+              to discuss the techniques and applications of tracking UAVs. Participants are invited to
+              submit their original contributions, surveys, and case studies that address the works of
+              UAV’s detection and tracking issues.</p>
           </div>
         </div>
         <div class="row">
@@ -241,7 +247,8 @@
             <img src="1.png" />
           </div>
         </div>
-        <p style="text-align: center">Figure 1 Illustrations of civil UAVs. (a) Large civil UAV; (b) Small civil UAV; (c) Tiny civil UAV.</p>
+        <p style="text-align: center">Figure 1 Illustrations of civil UAVs. (a) Large civil UAV; (b) Small civil UAV;
+          (c) Tiny civil UAV.</p>
         <p><br /></p>
 
         <div class="row" id="topic">
@@ -283,7 +290,30 @@
           <div class="col-xs-12">
             <h2><b>SPONSORS</b></h2>
             <p style=" text-align:center;">
-              <img src="logo.jpg" style=" height:182px;" />
+              <!-- <img src="logo.jpg" style=" height:182px;" /> -->
+              <span
+                style="display:inline-block;height:70px;width: 155px;border: 1px solid #eeeeee;padding-top: 20px;border-radius: 5px;"><img
+                  src="./img/oppo.png" style=" height:26px" /></span>
+              <span
+                style="display:inline-block;height:70px;width: 155px;border: 1px solid #eeeeee;padding-top: 20px;border-radius: 5px;margin-left: 6px">
+                <img src="./img/baidu.png" style=" height:30px;" />
+              </span>
+              <span
+                style="display:inline-block;height:70px;width: 155px;border: 1px solid #eeeeee;padding-top: 20px;border-radius: 5px;margin-left: 6px">
+                <img src="./img/JE.png" style=" height:30px;" />
+              </span>
+              <span
+                style="display:inline-block;height:70px;width: 155px;border: 1px solid #eeeeee;padding-top: 20px;border-radius: 5px;margin-left: 6px">
+                <img src="./img/360.png" style=" height:30px;" />
+              </span>
+              <span
+                style="display:inline-block;height:70px;width: 155px;border: 1px solid #eeeeee;padding-top: 20px;border-radius: 5px;margin-left: 6px">
+                <img src="./img/jiangmen.png" style=" height:30px;" />
+              </span>
+              <span
+                style="display:inline-block;height:70px;width: 155px;border: 1px solid #eeeeee;padding-top: 20px;border-radius: 5px;margin-left: 6px">
+                <img src="./img/Drones.png" style=" height:30px;;" />
+              </span>
             </p>
           </div>
         </div>
