@@ -191,6 +191,14 @@ pre {
   width: 100%;
   height: 100%;
 }
+.col1{
+  width: 980px;
+  height: 280px;
+}
+
+.uili{
+  margin-left: 60px;
+}
 
 .member-name1, .member-name2, .member-name3, .member-name5 {
   text-transform: uppercase;
