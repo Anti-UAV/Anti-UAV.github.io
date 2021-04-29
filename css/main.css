@@ -196,8 +196,11 @@ pre {
   width: 980px;
   height: 280px;
 }
-.origaners{
+.origans{
   margin-left: 13% !important;
+}
+.img-circle{
+  margin-bottom: 10px;
 }
 
 .uili{
@@ -461,7 +464,7 @@ pre {
 }
 .navbar-default .dropdown-menu {
     background: #fff none repeat scroll 0 0;
-    border-radius: 0 !important;
+    /* border-radius: 0 !important; */
     color: #000;
     font-size: 12px;
     min-width: 125px;
