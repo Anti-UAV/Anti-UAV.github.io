@@ -106,8 +106,8 @@
         <div class="col-xs-12">
           <h2><b>Guideline for Challenge</b></h2>
           <img class="people-pic" style="float:left;margin-right:30px;height:300px;" src="../qq.png" />
-          <p>The dataset of test-challenge will be release on <b>April 8th</b>. The deadline for result submission is
-            <b>April 15th</b>.</p>
+          <p>The dataset of test-challenge will be released soon. The deadline for result
+            submission will be released soon.</p>
           <p>We build a baseline method for submit results on <a href="https://github.com/Anti-UAV/baseline">Github</a>.
           </p>
           <p>If you encounter any questions or misunderstandings, please feel free to contact us. </p>
@@ -135,10 +135,10 @@
       <div class="row">
         <div class="col-xs-12">
           <h2><b>Award</b></h2>
-          <p>🎖️Best Paper Award: 500 USD + Certificate + XiaoMi Gift</p>
-          <p>🥇Challenge 1st-Place Award: 1200 USD + Certificate + XiaoMi Gift</p>
-          <p>🥈Challenge 2nd-Place Award: 800 USD + Certificate + XiaoMi Gift</p>
-          <p>🥉Challenge 3rd-Place Award: 500 USD + Certificate + XiaoMi Gift</p>
+          <p>🎖️Bset Paper: 2000 USD + Gift</p>
+          <p>🥇1st-Place: 2000 USD + Gift</p>
+          <p>🥈2nd-Place: 1500 USD +Gift</p>
+          <p>🥉2nd-Place: 1500 USD +Gift</p>
         </div>
       </div>
       <div class="row">
@@ -146,10 +146,10 @@
           <h2><b>Dataset</b></h2>
         </div>
       </div>
-      <div align="center"><iframe src="/3.mp4" width="500px" height="400px"></iframe></div>
+      <div align="center"><iframe src="../3.mp4" width="500px" height="400px"></iframe></div>
       <div class="row">
         <div class="col-xs-12">
-          <p>The dataset consists of 160 high quality, Full HD video sequences (both RGB and Thermal Infrared), spanning
+          <p>The dataset consists of 250 high quality, Full HD Thermal Infrared video sequences, spanning
             multiple occurrences of multi-scale UAVs.</p>
         </div>
       </div>
@@ -161,12 +161,17 @@
           <div
             style="border:2px solid #a1a1a1;padding:10px 40px;background:#d6ffd6; color:#000000; font-family: Consolas,Courier,monospace; ">
             <p></p>
-            <p>acc = Σt(IoUt*δ(vt>0)+ pt(1-δ(vt>0)))/T</p>
+            <!-- <p>acc = Σt(IoUt*δ(vt>0)+ pt(1-δ(vt>0)))/T</p> -->
+            <img src="./gif.gif" alt="">
           </div>
           <p>
-            The IoU_i is Intersection over Union (IoU) between each corresponding ground truth and tracking boxes and
-            the v are the visibility flags of the ground truth (the tracker’s predicted p are used to measure the state
-            accuracy). The accuracy is averaged over all frames.</p>
+            For frame t, IoUt is Intersection over Union (IoU) between the predicted tracking box and its corresponding
+            ground-truth
+            box, pt equals 1 when the predicted box is empty and 0 otherwise, and vt is the ground-truth
+            existence/visibility flag
+            of the target. The Iverson bracket indicator function 1[vt>0] equals 1 when vt>0 and 0 otherwise. The
+            accuracy is
+            averaged over all T frames.</p>
         </div>
       </div>
       <div class="row">
@@ -180,24 +185,23 @@
             <p>[x,y,width,height],</p>
             <p>[x,y,width,height],</p>
             <p>[],</p>
-            <p>…</p>
+            <p>...</p>
             <p></p>
             <p>[x,y,width,height]]</p>
           </div>
-          <p>Note: box coordinates are floats measured from the top left image corner (and are 0-indexed) and empty list
-            denote <span style="background:#E1E1E1;">
-              <font color="000000">not exist</font>
-            </span> flag.</p>
+          <p>Note: box coordinates are floats measured from the top left image corner (and are 0-indexed). An empty list denotes
+          there is no target in the current frame.</p>
         </div>
       </div>
       <div class="row">
         <div class="col-xs-12">
           <h2><b>Baseline and Evaluation Code</b></h2>
-          <p>Baseline and Evaluation codes are available on the Anti-UAV github.
-            Please refer to <a href="https://github.com/Anti-UAV/baseline">test.py</a>.</p>
-          <p> We provide Thermal Infrared (IR), RGB videos and their ground-truth labels. Contestants can only use both
-            IR and RGB videos and their ground-truth location in the first frame. Our evaluation ranks are calculated
-            according to the results on the IR video. </p>
+          <p>Baseline models and Evaluation codes are available on the <a href="https://github.com/Anti-UAV/baseline">Anti-UAV</a>.</p>
+          <p> We provide Thermal Infrared(IR) videos and their ground-truth labels. Contestants can only use the ground-
+          truth bounding box of the target in the first frame. For a comprehensive comparison of different trackers, we
+          evaluate them on video sequences with various challenging attributes and present both overall and attribute-
+          wise performance. Our evaluation ranks are calculated according to the overall performance on all video
+          sequences.</p>
         </div>
       </div>
     </div>

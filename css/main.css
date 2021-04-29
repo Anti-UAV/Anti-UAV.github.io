@@ -203,6 +203,7 @@ pre {
   margin-bottom: 10px;
 }
 
+
 .uili{
   margin-left: 60px;
 }
@@ -665,4 +666,8 @@ pre {
   font-size: 18px;
 }
 
-
+.sponsorsa {
+  text-decoration: none !important;
+  display: inline-block;
+  border-bottom: none;
+}
