@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>4</title>
+    <defs>
+        <path d="M0.5,0 L11.5,0 C11.7761424,-5.07265313e-17 12,0.223857625 12,0.5 L12,5 L12,5 L8.15012198,9.81234752 C8.05523589,9.93095514 7.91157944,10 7.75968758,10 L4.24031242,10 C4.08842056,10 3.94476411,9.93095514 3.84987802,9.81234752 L1.5840963,6.98012037 L1.5840963,6.98012037 L0,5 L0,0.5 C-3.38176876e-17,0.223857625 0.223857625,5.07265313e-17 0.5,0 Z" id="path-1"></path>
+    </defs>
+    <g id="4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="矩形" transform="translate(4.000000, 2.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="蒙版" fill="#3A96DD" xlink:href="#path-1"></use>
+            <rect fill="#FFFFFF" mask="url(#mask-2)" x="2.5" y="0" width="2" height="10"></rect>
+            <rect id="矩形备份-4" fill="#FFFFFF" mask="url(#mask-2)" x="7.5" y="0" width="2" height="10"></rect>
+            <rect id="矩形备份" fill="#F03A17" mask="url(#mask-2)" x="4.5" y="0" width="1" height="10"></rect>
+            <rect id="矩形备份-3" fill="#F03A17" mask="url(#mask-2)" x="6.5" y="0" width="1" height="10"></rect>
+            <rect id="矩形备份-2" fill="#FFFFFF" mask="url(#mask-2)" x="5.5" y="0" width="1" height="10"></rect>
+        </g>
+        <rect id="矩形" fill="#FFB900" x="9.5" y="12" width="1" height="3"></rect>
+        <circle id="椭圆形" stroke="#FFB900" fill="#D48C00" cx="10" cy="15.9882355" r="2.5"></circle>
+    </g>
+</svg>
