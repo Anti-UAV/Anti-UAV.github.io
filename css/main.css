@@ -71,7 +71,7 @@ p {
 a {
   text-decoration: none;
   border-bottom: 1px solid #ccc;
-  /* color: inherit; */
+  color: inherit;
 }
 
 .navbar a {
