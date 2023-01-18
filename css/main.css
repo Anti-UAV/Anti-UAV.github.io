@@ -4,7 +4,7 @@ body {
   font-weight: 300;
   -webkit-font-smoothing: subpixel-antialiased;
   color: #333;
-  padding-top: 70px;
+  /* padding-top: 70px; */
 }
 
 body *::selection {
@@ -203,6 +203,19 @@ pre {
   margin-bottom: 10px;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
 
 .uili{
   margin-left: 60px;

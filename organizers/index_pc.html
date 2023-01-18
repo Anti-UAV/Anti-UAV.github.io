@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>3rd Anti-UAV Workshop & Challenge</title>
+  <meta name="description" content="Catch UAVs that Want to Watch You ---">
+
+  <!--Open Graph Related Stuff-->
+  <meta property="og:title" content="3rd Anti-UAV Workshop & Challenge" />
+  <meta property="og:url" content="https://Anti-UAV.github.io/" />
+  <meta property="og:description" content="Catch UAVs that Want to Watch You ---" />
+  <meta property="og:site_name" content="Anti-UAV" />
+  <meta property="og:image" content="" />
+  <meta property="og:image:url" content="" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/main.css">
+  <link rel="stylesheet" type="text/css" href="../css/animate.min.css">
+  <!--<link rel="stylesheet" type="text/css" href="/css/font-awesome.css">-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/lineabasic.css">
+  <link rel="stylesheet" type="text/css" href="../css/magnific-popup.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <div class="row">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a target="_blank" href="https://cvpr.thecvf.com/">
+            <img src="../img/CVPR2023logo.png" alt="FOLIO LOGO" style=" height:75px;" />
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right" style="padding-top:10px;">
+            <li><a href="/">Home</a></li>
+            <li><a href="/schedule">Schedule</a></li>
+            <li><a href="/speakers">Speakers</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Challenge <span
+                  class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/Evaluate" target="_blank">EVALUATE</a></li>
+                <li><a href="/dataset" target="_blank">DATASET</a></li>
+                <!-- <li><a href="/leaderboard" target="_blank">LEADERBOARD</a></li> -->
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">LEADERBOARD<span
+                      class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/leaderboard" target="_blank">Leaderboard of the 1st Anti-UAV</a></li>
+                    <li><a href="/leaderboard2" target="_blank">Leaderboard of the 2nd Anti-UAV</a></li>
+                    <li><a href="/leaderboard3" target="_blank">Leaderboard of the 3rd Anti-UAV</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li><a href="/submission">Submission</a></li>
+            <li><a href="/organizers">Organizers</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="page-content">
+      <p><br /></p>
+      <style type="text/css">
+        * {
+          margin: 0;
+          padding:
+            0;
+        }
+
+        div {
+          position: relative;
+        }
+
+        div w {
+          position: absolute;
+          right: 40px;
+          top: 40px;
+          color: white;
+        }
+      </style>
+      <div>
+        <img src="../img/bgc.jpg" />
+        <font size="6"><strong>
+            <w>The <span>3rd</span> Anti-UAV Workshop & Challenge</w>
+          </strong></font>
+        <font size="6">
+          <w><br><br><br>Morning, Jun 18th, Sun, 2023 CVPR<br /><br /><br /></w>
+        </font>
+      </div>
+      <div class="row" id="ADVISORY COMMITTEE">
+        <div align="center" class="col-xs-12"><br />
+          <h1><b>ADVISORY COMMITTEE</b></h1>
+        </div>
+      </div>
+      <p></p>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class='col1'>
+            <div class="origans col-lg-2 col-sm-1 col-md-offset-2 text-center">
+              <div align="center"><img src="Baigui Sun.jpg" class="img-circle img-responsive img-thumbnail center-block"
+                style="height:128px;width: 128px"
+                  alt="img">
+              </div>
+              <a class="origina" href="https://scholar.google.com/citations?user=ZNhTHywAAAAJ&hl=zh-CN">Baigui Sun</a>
+              <div align="center">
+                <h5 class="member-name" data-text="Alibaba DAMO Academy">
+              </div>
+            </div>
+            <div class="origans col-lg-2 col-sm-1 col-md-offset-2 text-center">
+              <div align="center"><img src="YandongGuo.jpg" class="img-circle img-responsive img-thumbnail center-block"
+                  alt="img">
+              </div>
+              <div align="center"> <a href="https://scholar.google.com.hk/citations?hl=zh-CN&user=fWDoWsQAAAAJ" target="_blank" style="white-space: pre-wrap;">Yandong Guo</a></div>
+              <div align="center">
+                <h5 class="member-name" data-text="IDEA Visiting Researcher">
+              </div>
+              <br></br>
+            </div>
+            <div class="origans col-lg-2 col-sm-1 col-md-offset-2 text-center">
+              <div align="center"><img src="Shin’ichi Satoh.png" class="img-circle img-responsive img-thumbnail center-block"
+                  style="height:128px;width: 128px" alt="img"></div>
+              <div align="center"> <a href="http://www.satoh-lab.nii.ac.jp/"
+                  target="_blank" style="white-space: pre-wrap;">Shin’ichi Satoh</a></div>
+              <div align="center">
+                <h5 class="member-name" data-text="National Institute of Informatics (NII) and University
+                of Tokyo.">
+              </div>
+
+            </div>
+          </div>
+          <div class='col1'>
+            <div class="origans col-lg-2 col-sm-1 col-md-offset-2 text-center">
+              <div align="center"><img src="Junliang xing.jpg" class="img-circle img-responsive img-thumbnail center-block"
+                  style="width:128px;height:128px" alt="img">
+              </div>
+              <div align="center"> <a href="https://pi.cs.tsinghua.edu.cn/people/#faculty"
+                  target="_blank" style="white-space: pre-wrap;">Junliang Xing</a></div>
+              <div align="center">
+                <h5 class="member-name" data-text="Tsinghua University">
+              </div>
+            </div>
+            <div class="origans col-lg-2 col-sm-1 col-md-offset-2 text-center">
+              <div align="center"><img src="Jane Shen Shengmei.jpg" class="img-circle img-responsive img-thumbnail center-block"
+                  style="width:128px;height:128px" alt="img">
+              </div>
+              <div align="center"> <a href="https://www.janeshensm.com/" target="_blank" style="white-space: pre-wrap;">Jane Shen Shengmei</a></div>
+              <div align="center">
+                <h5 class="member-name" data-text="Pensees Singapore">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" id="ADVISORY COMMITTEE">
+        <div align="center" class="col-xs-12"><br />
+          <h1><b>ORGANIZING COMMITTEE</b></h1>
+        </div>
+      </div>
+      <p></p>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class='col1'>
+            <div class="origans col-lg-2 col-sm-1 col-md-offset-2 text-center">
+              <div align="center"><img src="Jian Zhao.jpeg" class="img-circle img-responsive img-thumbnail center-block"
+                  alt="img">
+              </div>
+              <a class="origina" href="https://zhaoj9014.github.io/">Jian Zhao</a>
+              <div align="center">
+                <h5 class="member-name" data-text="National Defense Innovation Institute">
+              </div>
+            </div>
+            <div class="origans col-lg-2 col-sm-1 col-md-offset-2 text-center">
+              <div align="center"><img src="gang wang.jpg" class="img-circle img-responsive img-thumbnail center-block"
+                  style="height:128px;width: 128px" alt="img"></div>
+              <div align="center"> <a href="https://scholar.google.com/citations?user=YOtXJvQAAAAJ&hl=zh-CN"
+                  target="_blank" style="white-space: pre-wrap;">Gang Wang</a></div>
+              <div align="center">
+                <h5 class="member-name" data-text="Beijing Institute of Basic Medical Sciences">
+              </div>
+
+            </div>
+            <div class="origans col-lg-2 col-sm-1 col-md-offset-2 text-center">
+              <div align="center"><img src="jianan li.jpg" class="img-circle img-responsive img-thumbnail center-block"
+                  style="width:128px;height:128px" alt="img">
+              </div>
+              <div align="center"> <a href="https://opt.bit.edu.cn/jsdw/jsml/gdcxyxxgcyjs/62a55332f56d4398bfb6b7cbc4b32b7b.htm"
+                  target="_blank" style="white-space: pre-wrap;">Jianan Li</a></div>
+              <div align="center">
+                <h5 class="member-name" data-text="Beijing Institute of Technology">
+              </div>
+            </div>
+          </div>
+
+          <div class='col1'>
+            <div class="origans col-lg-2 col-sm-1 col-md-offset-2 text-center">
+              <div align="center"><img src="lei jin.jpg" class="img-circle img-responsive img-thumbnail center-block"
+                  style="width:128px;height:128px" alt="img">
+              </div>
+              <div align="center"> <a href="https://teacher.bupt.edu.cn/jinlei1/zh_CN/index/260463/list/" target="_blank" style="white-space: pre-wrap;">Lei Jin</a></div>
+              <div align="center">
+                <h5 class="member-name" data-text="Beijing University of Posts and Telecommunications">
+              </div>
+            </div>
+            <div class="origans col-lg-2 col-sm-1 col-md-offset-2 text-center">
+              <div align="center"><img src="Jiaming Chu.jpg" class="img-circle img-responsive img-thumbnail center-block"
+                  style="width:128px;height:128px" alt="img"></div>
+              <div align="center"> <a href="https://scholar.google.com.hk/citations?user=6MMP6YcAAAAJ&hl=zh-CN" target="_blank" style="white-space: pre-wrap;">Jiaming Chu</a></div>
+              <div align="center">
+                <h5 class="member-name" data-text="Beijing University of Posts and Telecommunications">
+              </div>
+            </div>
+            <div class="origans col-lg-2 col-sm-1 col-md-offset-2 text-center">
+              <div align="center"><img src="Zhihao Zhang.jpg" class="img-circle img-responsive img-thumbnail center-block"
+                  style="width:128px;height:128px" alt="img"></div>
+              <div align="center"> <a href="" target="_blank" style="white-space: pre-wrap;">Zhihao Zhang</a></div>
+              <div align="center">
+                <h5 class="member-name" data-text="National Defense Innovation Institute">
+              </div>
+            </div>
+          </div>
+
+          <div class="col1"> 
+            <div class="origans col-lg-2 col-sm-1 col-md-offset-2 text-center">
+              <div align="center"><img src="Jun Wang.jpg" class="img-circle img-responsive img-thumbnail center-block"
+                  style="width:128px;height:128px" alt="img"></div>
+              <div align="center"> <a href="https://wangjun2022.github.io/" target="_blank" style="white-space: pre-wrap;">Jun Wang</a></div>
+              <div align="center">
+                <h5 class="member-name" data-text="National Defense Innovation Institute">
+              </div>
+            </div>
+            <div class="origans col-lg-2 col-sm-1 col-md-offset-2 text-center">
+              <div align="center"><img src="Jianqiang Xia.jpg" class="img-circle img-responsive img-thumbnail center-block"
+                  style="width:128px;height:128px" alt="img"></div>
+              <div align="center"> <a href="" target="_blank" style="white-space: pre-wrap;">Jianqiang Xia</a></div>
+              <div align="center">
+                <h5 class="member-name" data-text="National Defense Innovation Institute">
+              </div>
+            </div>
+            <div class="origans col-lg-2 col-sm-1 col-md-offset-2 text-center">
+              <div align="center"><img src="Kai Wang.jpg" class="img-circle img-responsive img-thumbnail center-block"
+                  style="width:128px;height:128px" alt="img">
+              </div>
+              <div align="center"> <a href="https://scholar.google.com/citations?user=i2II0XIAAAAJ&hl=zh-CN" target="_blank" style="white-space: pre-wrap;">Kai Wang</a></div>
+              <div align="center">
+                <h5 class="member-name" data-text="National University of Singapore">
+              </div>
+            </div>
+          </div>
+
+          <div class="col1"> 
+            <div class="origans col-lg-2 col-sm-1 col-md-offset-2 text-center">
+              <div align="center"><img src="Yang Liu.jpg" class="img-circle img-responsive img-thumbnail center-block"
+                  style="width:128px;height:128px" alt="img"></div>
+              <div align="center"> <a href="https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&hl=zh-CN&user=t1emSE0AAAAJ" target="_blank" style="white-space: pre-wrap;">Yang Liu</a></div>
+              <div align="center">
+                <h5 class="member-name" data-text="Alibaba Inc.">
+              </div>
+            </div>
+            <div class="origans col-lg-2 col-sm-1 col-md-offset-2 text-center">
+              <div align="center"><img src="Zheng Zhu.jpg" class="img-circle img-responsive img-thumbnail center-block"
+                  style="width:128px;height:128px" alt="img"></div>
+              <div align="center"> <a href="http://www.zhengzhu.net/" target="_blank" style="white-space: pre-wrap;">Zheng Zhu</a></div>
+              <div align="center">
+                <h5 class="member-name" data-text="PhiGent Robotics">
+              </div>
+            </div>
+            <div class="origans col-lg-2 col-sm-1 col-md-offset-2 text-center">
+              <div align="center"><img src="Tianyang Xu.jpg"
+                  class="img-circle img-responsive img-thumbnail center-block" style="width:128px;height:128px"
+                  alt="img">
+              </div>
+              <div align="center"> <a href="https://scholar.google.com.hk/citations?user=bbSNrAgAAAAJ&hl=zh-TW" target="_blank" style="white-space: pre-wrap;">Tianyang Xu</a></div>
+              <div align="center">
+                <h5 class="member-name" data-text="Jiangnan University, Wuxi, China.">
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col1">
+            <div class="origans col-lg-2 col-sm-1 col-md-offset-2 text-center">
+              <div align="center"><img src="Sadaf Gulshad.png" class="img-circle img-responsive img-thumbnail center-block" style="width:128px;height:128px"
+                  alt="img">
+              </div>
+              <div align="center"> <a href="https://sadafgulshad1.github.io" target="_blank" style="white-space: pre-wrap;">Sadaf Gulshad</a></div>
+              <div align="center">
+                <h5 class="member-name" data-text="Bosch Delta Lab, University of Amsterdam">
+              </div>
+
+            </div>
+            <div class="origans col-lg-2 col-sm-1 col-md-offset-2 text-center">
+              <div align="center"><img src="Jiaojiao Zhao.png"
+                  class="img-circle img-responsive img-thumbnail center-block" style="width:128px;height:128px"
+                  alt="img">
+              </div>
+              <div align="center"> <a href="https://staff.fnwi.uva.nl/j.zhao3/" target="_blank" style="white-space: pre-wrap;">Jiaojiao Zhao</a></div>
+              <div align="center">
+                <h5 class="member-name" data-text="VIS Lab, University of Amsterdam">
+              </div>
+            </div>
+            <div class="origans col-lg-2 col-sm-1 col-md-offset-2 text-center">
+              <div align="center"><img src="Guibo Zhu.png"
+                  class="img-circle img-responsive img-thumbnail center-block" style="width:128px;height:128px"
+                  alt="img">
+              </div>
+              <div align="center"> <a href="https://people.ucas.ac.cn/~0026863?language=en" target="_blank" style="white-space: pre-wrap;">Guibo Zhu</a></div>
+              <div align="center">
+                <h5 class="member-name" data-text="Institute of Automation, Chinese Academy of Sciences(CASIA)">
+              </div>
+            </div>
+          </div>
+
+          <div class="col1">
+            <div class="origans col-lg-2 col-sm-1 col-md-offset-2 text-center">
+              <div align="center"><img src="Zheng Wang.jpg" class="img-circle img-responsive img-thumbnail center-block"
+                  alt="img">
+              </div>
+              <div align="center"> <a href="https://wangzwhu.github.io/home/" target="_blank" style="white-space: pre-wrap;">Zheng Wang</a></div>
+              <div align="center">
+                <h5 class="member-name" data-text="Wuhan University">
+              </div>
+              <br></br>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p><br /></p>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <h2><b>Contact</b></h2>
+          <p>Please feel free to send any question or comments to:
+            <a href="mailto:zhaojian90@u.nus.edu" style="color: blue;">zhaojian90@u.nus.edu</a>,
+            <a href="mailto:g_wang@foxmail.com" style="color: blue;">g_wang@foxmail.com</a>,
+            <a href="mailto:lijianan@bit.edu.cn" style="color: blue;">lijianan@bit.edu.cn</a>.
+          </p>
+        </div>
+      </div>
+
+      <p><br /></p>
+
+    </div>
+  </div>
+  <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
