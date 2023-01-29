@@ -98,10 +98,17 @@
 
       <div class="row" id="dataset">
         <div class="col-xs-12">
-          <p>The full dataset has been released. There are two subsets in the dataset, i.e., the
-            test-dev subset
-            and test-challenge subset. Both subsets consist of 140 thermal infrared video sequences, spanning multiple occurrences of multi-scale UAVs. We only
-            provide annotation files for the test-dev. The challenge server for evaluation on the test-challenge is now open.
+          <p>The full dataset has been released. There are three subsets in the dataset, i.e., the
+            train subset, the test subset for track 1 and the test subset for track 2. The train subset 
+            consists of 200 thermal infrared video sequences and publishes detailed annotation files 
+            (whether the target exists, target location information and various challenges). 
+            The subset for track 1 also contains 200 video sequences, only providing the position information 
+            of target in the first frame; The subset for track 2 contains 200 video sequences. 
+            This track does not provide any labeled information. 
+            It requires participants to obtain the flag of existence and corresponding target location information of 
+            the target through detection and tracking. Above three subsets do not have any overlap between each other.
+            We propose participants could train a suitable detector or tracker model depending on multi-model label information
+            in train subset.
           </p>
         </div>
       </div>
@@ -113,22 +120,38 @@
           <h2><b>CVPR2023 Anti-UAV Challenge Dataset</b></h2>
           <p><b>1. Folder Tree Diagram</b></p>
           <ul>
-            <li>test-dev<ul>
+            <li>train<ul>
                 <li>video_name<ul>
-                    <li>IR.mp4</li>
-                    <li>label.json</li>
+                    <li>000001.jpg</li>
+                    <li>000002.jpg</li>
+                    <li>...</li>
+                    <li>001500.jpg</li>
+                    <li>IR_label.json</li>
                   </ul>
                 </li>
               </ul>
             </li>
-            <li>test-challenge<ul>
+            <li>track1_test<ul>
                 <li>video_name<ul>
-                    <li>IR.mp4</li>
-                    <li>label.json</li>
+                    <li>000001.jpg</li>
+                    <li>000002.jpg</li>
+                    <li>...</li>
+                    <li>001500.jpg</li>
+                    <li>IR_label.json</li>
                   </ul>
                 </li>
               </ul>
             </li>
+            <li>track2_test<ul>
+              <li>video_name<ul>
+                  <li>000001.jpg</li>
+                  <li>000002.jpg</li>
+                  <li>...</li>
+                  <li>001500.jpg</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
           </ul>
           <p></p>
           <!-- 大 中 小 白天 夜晚 云层 楼宇 虚假目标 速度变化悬停 遮挡 尺度变化 -->
@@ -207,8 +230,9 @@
           <p><br></p>
 
           <p><b>3. Division Rules</b></p>
-          <p><b>test-dev:</b> 140 videos for testing your algorithm.</p>
-          <p><b>test-challenge:</b> 140 videos for the final submission.</p>
+          <p><b>train:</b> 200 videos for training your algorithm.</p>
+          <p><b>test-track1:</b> 200 videos for the final submission for track 1.</p>
+          <p><b>test-track2:</b> 200 videos for the final submission for track 2.</p>
           </b></b>
         </div><b style="color:red;"><b>
           </b></b>
@@ -229,8 +253,9 @@
               Drive</a></p>
           <p> News: * 2020/02/19: add IR_label.json </p>
           <p> News: * 2020/04/08: upload test-challenge </p> -->
-          <p>You can download the test-dev at <a href="https://pan.baidu.com/s/11OnXAzT28WWFqaKPPy00DA">Baidu Yun (vfjb)</a>/<a href="https://drive.google.com/file/d/1UCyapTkvYGJsfn21iUFInHANbDIAkSeX/view?usp=sharing">Google Drive</a></p>
-          <p>You can download the test-challenge at <a href="https://pan.baidu.com/s/1X5KE1lyKfO2KlQYysJ8-TA">Baidu Yun (17dh)</a>/ <a href="https://drive.google.com/file/d/1w0aiMmTOg1SxmsoJxsbA5kqWO9o8Xgum/view?usp=sharing">Google Drive</a>.</p>
+          <p>We will publish the link of dataset soon.</p>
+          <!-- <p>You can download the test-dev at <a href="https://pan.baidu.com/s/11OnXAzT28WWFqaKPPy00DA">Baidu Yun (vfjb)</a>/<a href="https://drive.google.com/file/d/1UCyapTkvYGJsfn21iUFInHANbDIAkSeX/view?usp=sharing">Google Drive</a></p>
+          <p>You can download the test-challenge at <a href="https://pan.baidu.com/s/1X5KE1lyKfO2KlQYysJ8-TA">Baidu Yun (17dh)</a>/ <a href="https://drive.google.com/file/d/1w0aiMmTOg1SxmsoJxsbA5kqWO9o8Xgum/view?usp=sharing">Google Drive</a>.</p> -->
         </div>
         <p><br /></p>
 

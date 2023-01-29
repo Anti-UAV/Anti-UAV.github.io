@@ -90,9 +90,19 @@
         <div class="col-xs-12">
           <h2><b>Introduction</b></h2>
           <p>
-            Anti-UAV tracking competition requires algorithms to track a given UAV target and simultaneously estimate
-            the tracking states of the target. When the target disappears, an invisible mark of the target needs to be
-            given.
+            This year's challenge has two independent tracks:
+          </p>
+          <p>
+            <b>Track1: Anti-UAV Tracking</b>
+            Given the bounding box of a drone target in the first frame, this challenge track requires algorithms to track the given 
+            target in each video frame by predicting its bounding box. When the target disappears, an invisible mark (no bounding box) 
+            needs to be given.
+          </p>
+          <p>
+            <b>Track2: Anti-UAV Detection & Tracking</b>
+            Whether a drone target exits in the first frame is unknown. This challenge track requires algorithms to detect and track 
+            the drone target when it appears by predicting its bounding box. When the target does not exist or disappears, an invisible 
+            mark (no bounding box) needs to be given.
           </p>
         </div>
       </div>
@@ -104,9 +114,10 @@
               target="_blank">Baidu Yun</a> (y67q) /<a
               href="https://drive.google.com/file/d/167ibsP99Gd28wLUywyyBg4SzoV4MTIp2/view?usp=sharing" target="_blank">
               Google Drive</a>🔥🔥🔥</p> -->
-          <p>&#128293&#128293&#128293 <a href="https://competitions.codalab.org/competitions/23887">Codalab</a> server is online
+          <!-- <p>&#128293&#128293&#128293 <a href="https://competitions.codalab.org/competitions/23887">Codalab</a> server is online
             now!&#128293&#128293&#128293</p>
-            <p>&#128293&#128293&#128293 The test-challenge is available now!&#128293&#128293&#128293</p>
+            <p>&#128293&#128293&#128293 The test-challenge is available now!&#128293&#128293&#128293</p> -->
+          <p>Coming soon!</p>  
         </div>
       </div>
       <p><br /></p>
@@ -115,9 +126,22 @@
         <div class="col-xs-12">
           <h2><b>Guideline for Challenge</b></h2>
           <img style="float:left;margin-right:30px;height:230px;" src="./2023qq.jpg" />
-          <p>The test-challenge has been released. The deadline for result submission is 26th Feb.</p>
-          <p>We build a baseline method on <a href="https://modelscope.cn/models/damo/cv_manual_uav-detection_uav/summary">ModelScope</a>, Please refer to the evaluation code and resulting output file to test your algorithm and prepare final submission (.zip)
-          to Codalab server.
+          <p>The two tracks share a set of training data, but use two different sets of test data. The video in the test data of Track1 contains a drone target in the first frame;
+             the video in the training data and in the test data of Track2 may or may not contain a drone target in the first frame. 
+          </p>
+          <p>
+            The two tracks use the same evaluation metric, as will be introduced below.
+          </p>
+          <p>
+            Two independent Codalab severs are used to evaluate and rank the submissions for Track1 and Track2, respectively. 
+            The Codalab severs and the test data for both tracks will be publicly accessible online after the testing phase begins on <b style="color:red">26th Feb</b>.
+          </p>
+          <p>
+            We provide Baseline model and Evaluation code on <a style="color:blue" href="https://modelscope.cn/models/damo/cv_manual_uav-detection_uav/summary">ModelScope</a>, 
+            Please refer to the evaluation code and resulting output file to test your algorithm and prepare final submission (.zip) to Codalab server.
+          </p>
+          <p>
+            The deadline for result submission is <b style="color:red">26th Feb</b>.
           </p>
           <p>If you encounter any questions or misunderstandings, please feel free to contact us. </p>
           <p><a href="mailto:zhaojian90@u.nus.edu" style="color: blue;">zhaojian90@u.nus.edu</a>,
@@ -132,10 +156,8 @@
       <div class="row" id="leaderboard">
         <div class="col-xs-12">
           <h2><b>Participation requirements</b></h2>
-          <p> The dataset of test-dev is NOT allowed to be used in learning.</p>
-          <p> Applying pretrained UAV detecter is NOT allowed.</p>
-          <p> Contestants are encouraged to submit previously published trackers or modified versions of third-party
-            trackers.</p>
+          <p> The provided test data is NOT allowed to be used for training.</p>
+          <p> NO additional training data is allowed to train/pretrain the model.</p>
           <p> The submission description should clearly state the algorithm framework.</p>
         </div>
       </div>
@@ -144,7 +166,7 @@
       <p><br /></p>
       <div class="row">
         <div class="col-xs-12">
-          <h2><b>Award</b></h2>
+          <h2><b>Award For Each Track</b></h2>
           <p><img class='evaluateimg' src="./best.svg" alt="">Best Paper: Certificate + 500 USD</p>
           <p><img class='evaluateimg' src="./1st.svg" alt="">1st-Place: Certificate + 1500 USD</p>
           <p><img class='evaluateimg' src="./2nd.svg" alt="">2nd-Place: Certificate + 1000 USD</p>
@@ -160,7 +182,7 @@
       <div align="center"><iframe src="../3.mp4" width="500px" height="400px"></iframe></div>
       <div class="row">
         <div class="col-xs-12">
-          <p>The dataset consists of 280 high quality, Full HD Thermal Infrared video sequences, spanning
+          <p>The dataset consists of 600 high quality, Full HD Thermal Infrared video sequences, spanning
             multiple occurrences of multi-scale UAVs.</p>
         </div>
       </div>
@@ -173,16 +195,14 @@
             style="border:2px solid #a1a1a1;padding:10px 40px;background:#d6ffd6; color:#000000; font-family: Consolas,Courier,monospace; ">
             <p></p>
             <!-- <p>acc = Σt(IoUt*δ(vt>0)+ pt(1-δ(vt>0)))/T</p> -->
-            <img src="./gif.gif" alt="">
+            <img src="./formula.png" alt="">
           </div>
           <p>
-            For frame t,  <span style="font-weight:500">IoUt</span> is Intersection over Union (IoU) between the predicted tracking box and its corresponding
-            ground-truth
-            box, <span style="font-weight:500">pt</span> equals 1 when the predicted box is empty and 0 otherwise, and <span style="font-weight:500">vt</span> is the ground-truth
-            existence/visibility flag
-            of the target. The Iverson bracket indicator function <b style="font-weight:700">1</b> <span style="font-weight:500">[vt>0]</span> equals 1 when <span style="font-weight:500">[vt>0]</span> and 0 otherwise. The
-            accuracy is
-            averaged over all <span style="font-weight:500">T</span> frames.</p>
+            For frame t,  <span style="font-weight:500">IoU<sub>t</sub></span> is Intersection over Union (IoU) between the predicted tracking box and its corresponding
+            ground-truth box, <span style="font-weight:500">p<sub>t</sub></span>is the predicted visibility flag, it equals 1 when the predicted box is empty and 0 otherwise. 
+            The <span style="font-weight:500">v<sub>t</sub></span> is the ground-truth visibility flag of the target, the indicator function <span style="font-weight:500">&delta;(v<sub>t</sub>>0)</span> 
+            equals 1 when <span style="font-weight:500">v<sub>t</sub> > 0</span> and 0 otherwise. The accuracy is averaged over all frames in a sequence, <span style="font-weight:500">T</span> indicates 
+            total frames and <span style="font-weight:500">T<sup>*</sup></span> denotes the number of frames corresponding to the presence of the target in the ground-truth.
         </div>
       </div>
       <p><br /></p>
@@ -206,7 +226,7 @@
         </div>
       </div>
       <p><br /></p>
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-xs-12">
           <h2><b>Baseline and Evaluation Code</b></h2>
           <p>Baseline models and Evaluation codes are available on <a href="https://modelscope.cn/models/damo/cv_manual_uav-detection_uav/summary">ModelScope</a>.</p>
@@ -215,7 +235,7 @@
           evaluate them on video sequences with various challenging attributes. Our evaluation ranks are calculated according to the overall performance on all video
           sequences.</p>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
   </div>
