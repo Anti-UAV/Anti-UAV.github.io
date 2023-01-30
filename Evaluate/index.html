@@ -125,30 +125,44 @@
       <div class="row">
         <div class="col-xs-12">
           <h2><b>Guideline for Challenge</b></h2>
-          <img style="float:left;margin-right:30px;height:230px;" src="./2023qq.jpg" />
-          <p>The two tracks share a set of training data, but use two different sets of test data. The video in the test data of Track1 contains a drone target in the first frame;
-             the video in the training data and in the test data of Track2 may or may not contain a drone target in the first frame. 
-          </p>
-          <p>
-            The two tracks use the same evaluation metric, as will be introduced below.
-          </p>
-          <p>
-            Two independent Codalab severs are used to evaluate and rank the submissions for Track1 and Track2, respectively. 
-            The Codalab severs and the test data for both tracks will be publicly accessible online after the testing phase begins on <b style="color:red">26th Feb</b>.
-          </p>
-          <p>
-            We provide Baseline model and Evaluation code on <a style="color:blue" href="https://modelscope.cn/models/damo/cv_manual_uav-detection_uav/summary">ModelScope</a>, 
-            Please refer to the evaluation code and resulting output file to test your algorithm and prepare final submission (.zip) to Codalab server.
-          </p>
-          <p>
-            The deadline for result submission is <b style="color:red">26th Feb</b>.
-          </p>
-          <p>If you encounter any questions or misunderstandings, please feel free to contact us. </p>
-          <p><a href="mailto:zhaojian90@u.nus.edu" style="color: blue;">zhaojian90@u.nus.edu</a>,
-            <a href="mailto:g_wang@foxmail.com" style="color: blue;">g_wang@foxmail.com</a>,
-            <a href="mailto:lijianan@bit.edu.cn" style="color: blue;">lijianan@bit.edu.cn</a>.
-          </p>
-          <p> We also set up a QQ group (728385626) for quick communication. </p>
+          <ul list-style-type="circle">
+            <li>
+              <p>The two tracks share a set of training data, but use two different sets of test data. The video in the test data of Track1 contains a drone target in the first frame;
+                the video in the training data and in the test data of Track2 may or may not contain a drone target in the first frame. 
+             </p>
+            </li>
+            <li>
+              <p>
+                The two tracks use the same evaluation metric, as will be introduced below.
+              </p>
+            </li>
+            <li>
+              <p>
+                Two independent Codalab severs are used to evaluate and rank the submissions for Track1 and Track2, respectively. 
+                The Codalab severs and the test data for both tracks will be publicly accessible online after the testing phase begins on <b style="color:red">26th Feb</b>.
+              </p>
+            </li>
+            <li>
+              <p>
+                We provide Baseline model and Evaluation code on <a style="color:blue" href="https://modelscope.cn/models/damo/cv_manual_uav-detection_uav/summary">ModelScope</a>, 
+                Please refer to the evaluation code and resulting output file to test your algorithm and prepare final submission (.zip) to Codalab server.
+              </p>
+            </li>
+            <li>
+              <img style="float:right;margin-left:15px;height:230px;" src="./2023qq.jpg" />
+              <p>
+                The deadline for result submission is <b style="color:red">26th Feb</b>.
+              </p>
+            </li>
+            <li>
+              <p>If you encounter any questions or misunderstandings, please feel free to contact us: </p>
+              <p><a href="mailto:zhaojian90@u.nus.edu" style="color: blue;">zhaojian90@u.nus.edu</a>,
+              <p><a href="mailto:g_wang@foxmail.com" style="color: blue;">g_wang@foxmail.com</a>,</p>
+              <p><a href="mailto:lijianan@bit.edu.cn" style="color: blue;">lijianan@bit.edu.cn</a>.</p>
+              </p>
+              <p> We also set up a QQ group (728385626) for quick communication. </p>
+            </li>
+          </ul>
         </div>
       </div>
 
@@ -156,9 +170,17 @@
       <div class="row" id="leaderboard">
         <div class="col-xs-12">
           <h2><b>Participation requirements</b></h2>
-          <p> The provided test data is NOT allowed to be used for training.</p>
-          <p> NO additional training data is allowed to train/pretrain the model.</p>
-          <p> The submission description should clearly state the algorithm framework.</p>
+          <ul list-style-type="circle">
+            <li>
+              <p> The provided test data is NOT allowed to be used for training.</p>
+            </li>
+            <li>
+              <p> NO additional training data is allowed to train/pretrain the model.</p>
+            </li>
+            <li>
+              <p> The submission description should clearly state the algorithm framework.</p>
+            </li>
+          </ul>
         </div>
       </div>
 
@@ -175,7 +197,8 @@
         </div>
       </div>
       <p><br /></p>
-      <div class="row">
+
+      <!-- <div class="row">
         <div class="col-xs-12">
           <h2><b>Dataset</b></h2>
         </div>
@@ -187,7 +210,8 @@
             multiple occurrences of multi-scale UAVs.</p>
         </div>
       </div>
-      <p><br /></p>
+      <p><br /></p> -->
+
       <div class="row">
         <div class="col-xs-12">
           <h2><b>Metrics</b></h2>
@@ -200,7 +224,7 @@
           </div>
           <p>
             For frame t,  <span style="font-weight:500">IoU<sub>t</sub></span> is Intersection over Union (IoU) between the predicted tracking box and its corresponding
-            ground-truth box, <span style="font-weight:500">p<sub>t</sub></span>is the predicted visibility flag, it equals 1 when the predicted box is empty and 0 otherwise. 
+            ground-truth box, <span style="font-weight:500">p<sub>t</sub></span> is the predicted visibility flag, it equals 1 when the predicted box is empty and 0 otherwise. 
             The <span style="font-weight:500">v<sub>t</sub></span> is the ground-truth visibility flag of the target, the indicator function <span style="font-weight:500">&delta;(v<sub>t</sub>>0)</span> 
             equals 1 when <span style="font-weight:500">v<sub>t</sub> > 0</span> and 0 otherwise. The accuracy is averaged over all frames in a sequence, <span style="font-weight:500">T</span> indicates 
             total frames and <span style="font-weight:500">T<sup>*</sup></span> denotes the number of frames corresponding to the presence of the target in the ground-truth.
