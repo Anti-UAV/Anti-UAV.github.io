@@ -96,7 +96,7 @@
       </div>
       <hr />
 
-      <div class="row" id="dataset">
+      <!-- <div class="row" id="dataset">
         <div class="col-xs-12">
           <p>The full dataset has been released. There are three subsets in the dataset, i.e., the
             train subset, the test subset for track 1 and the test subset for track 2. The train subset 
@@ -111,58 +111,20 @@
             in train subset.
           </p>
         </div>
-      </div>
+      </div> -->
 
       <p><br></p>
 
       <div class="row" id="dataset">
         <div class="col-xs-12">
-          <h2><b>CVPR 2023 Anti-UAV Challenge Dataset</b></h2>
-          <p><b>1. Folder Tree Diagram</b></p>
-          <ul>
-            <li>train<ul>
-                <li>video_name<ul>
-                    <li>000001.jpg</li>
-                    <li>000002.jpg</li>
-                    <li>...</li>
-                    <li>001500.jpg</li>
-                    <li>IR_label.json</li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li>track1_test<ul>
-                <li>video_name<ul>
-                    <li>000001.jpg</li>
-                    <li>000002.jpg</li>
-                    <li>...</li>
-                    <li>001500.jpg</li>
-                    <li>IR_label.json</li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li>track2_test<ul>
-              <li>video_name<ul>
-                  <li>000001.jpg</li>
-                  <li>000002.jpg</li>
-                  <li>...</li>
-                  <li>001500.jpg</li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          </ul>
-          <p></p>
           <!-- 大 中 小 白天 夜晚 云层 楼宇 虚假目标 速度变化悬停 遮挡 尺度变化 -->
-          <p><b>2.Scenario Variations:</b></p>
-          <p>
+          <!-- <p><b>2.Scenario Variations:</b></p> -->
+          <li>
             Compared to the previous challenge, we further enlarge the dataset
             this year by adding more challenging video sequences with dynamic backgrounds, complex movements, 
             and tiny-scale targets, such that the resulting new dataset covers a greater variety of scenarios 
             with multi-scale UAVs.
-            </p>
-          <p>Examples are shown as follows.</p>
+            Examples are shown as follows.</li>
           <p></p>
           <!-- <div class="col-md-12"> -->
             <!-- <center><img src="data_01.png" /></center> -->
@@ -228,34 +190,32 @@
           <p><br></p>
           </div>
           <p><br></p>
-
-          <p><b>3. Division Rules</b></p>
-          <p><b>train-track1:</b> 223 videos for training your algorithm.</p>
-          <p><b>train-track2:</b> 223 videos for training your algorithm.</p>
-          <p><b>train-track3:</b> 200 videos for training your algorithm.</p>
-          <p><b>test-track1:</b> 216 videos for the final submission for track 1.</p>
-          <p><b>test-track2:</b> 216 videos for the final submission for track 2.</p>
-          <p><b>test-track2:</b> 100 videos for the final submission for track 3.</p>
-          </b></b>
-
-          <p><b>4. Track3 Description and Legend</b></p>
-          <p>Track3 contains a total of 300 video sequences, with 200 used as the training set and 100 as the test set. The task is to continuously track the drone in the video frames given the initial target position. The algorithm must handle situations such as target disappearance, target reappearance, target overlap, and the appearance of new targets, as well as complex background environments. The number of targets per frame ranges from 0 to over 40.</p>
-          </b></b>
-          <div class="row">
-            <div class="col-md-12">
-              <img src="../img1/11.png" style="display: block; margin: auto; width: 80%;" />
-            </div>
+        <li>In addition, we have presented a new track for multiple UAV tracking (Track3). This track contains a total of 300 video sequences, with 200 used as the training set and 100 as the test set. The task is to continuously track the drone in the video frames given the initial target position. The algorithm must handle situations such as target disappearance, target reappearance, target overlap, and the appearance of new targets, as well as complex background environments. The number of targets per frame ranges from 0 to over 40.</li>
+        </b></b>
+        <div class="row">
+          <div class="col-md-12">
+            <img src="../img1/11.png" style="display: block; margin: auto; width: 80%;" />
           </div>
-          <div class="row">
-            <div class="col-md-12">
-              <img src="../img1/22.png" style="display: block; margin: auto;width: 80%;" />
-            </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <img src="../img1/22.png" style="display: block; margin: auto;width: 80%;" />
           </div>
+        </div>
 
-          
-        </div><b style="color:red;"><b>
-          </b></b>
-        <p><b>5. Label Information</b></p>
+        <hr />
+        <h2><b>Subset for Each Track</b></h2>
+          <p><b>Train-Track1:</b> 223 videos for training your algorithm.</p>
+          <p><b>Train-Track2:</b> 223 videos for training your algorithm.</p>
+          <p><b>Train-Track3:</b> 200 videos for training your algorithm.</p>
+          <p><b>Test-Track1:</b> 216 videos for the final submission for track 1.</p>
+          <p><b>Test-Track2:</b> 216 videos for the final submission for track 2.</p>
+          <p><b>Test-Track3:</b> 100 videos for the final submission for track 3.</p>
+          </b></b>     
+
+
+        <hr />
+        <h2><b>Attribute Description</b></h2>
         <div class="col-xs-12">
           <table class="table   table-important" style="font-size:14px">
           <th width="150" scope="col">Attribute</th>
@@ -313,7 +273,7 @@
 
       <div class="row" id="dataset">
         <div class="col-xs-12">
-          <h2><b>Download</b></h2>
+          <!-- <h2><b>Download</b></h2> -->
           <!-- <p>You can download test-challenge at <a href="https://pan.baidu.com/s/1tKhdFKiaPZ4pAvMrhEtNdA"
               target="_blank">Baidu Yun</a> (y67q) /<a
               href="https://drive.google.com/file/d/167ibsP99Gd28wLUywyyBg4SzoV4MTIp2/view?usp=sharing" target="_blank">
@@ -324,7 +284,7 @@
               Drive</a></p>
           <p> News: * 2020/02/19: add IR_label.json </p>
           <p> News: * 2020/04/08: upload test-challenge </p> -->
-          <p>You can download train set at <a href="https://modelscope.cn/models/damo/4th_Anti-UAV_CVPR25/summary">Modelscope</a> now. </p>
+          <!-- <p>You can download train set at <a href="https://modelscope.cn/models/damo/4th_Anti-UAV_CVPR25/summary">Modelscope</a> now. </p> -->
           <!-- <p>Coming soon.</p> -->
           <!-- <p>You can download the test-dev at <a href="https://pan.baidu.com/s/11OnXAzT28WWFqaKPPy00DA">Baidu Yun (vfjb)</a>/<a href="https://drive.google.com/file/d/1UCyapTkvYGJsfn21iUFInHANbDIAkSeX/view?usp=sharing">Google Drive</a></p>
           <p>You can download the test-challenge at <a href="https://pan.baidu.com/s/1X5KE1lyKfO2KlQYysJ8-TA">Baidu Yun (17dh)</a>/ <a href="https://drive.google.com/file/d/1w0aiMmTOg1SxmsoJxsbA5kqWO9o8Xgum/view?usp=sharing">Google Drive</a>.</p> -->

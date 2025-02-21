@@ -83,35 +83,6 @@
 
     <div class="page-content">
 
-
-
-      <p></p>
-      <div class="row">
-        <div class="col-xs-12">
-          <h2><b>Introduction</b></h2>
-          <p>
-            This year's challenge has two independent tracks:
-          </p>
-          <p>
-            <b>Track1: Anti-UAV Tracking</b>
-            Given the bounding box of a drone target in the first frame, this challenge track requires algorithms to track the given 
-            target in each video frame by predicting its bounding box. When the target disappears, an invisible mark (no bounding box) 
-            needs to be given.
-          </p>
-          <p>
-            <b>Track2: Anti-UAV Detection & Tracking</b>
-            Whether a drone target exits in the first frame is unknown. This challenge track requires algorithms to detect and track 
-            the drone target when it appears by predicting its bounding box. When the target does not exist or disappears, an invisible 
-            mark (no bounding box) needs to be given.
-          </p>
-          <p>
-            <b>Track3: </b>
-            Whether a drone target exits in the first frame is unknown. This challenge track requires algorithms to detect and track 
-            the drone target when it appears by predicting its bounding box. When the target does not exist or disappears, an invisible 
-            mark (no bounding box) needs to be given.
-          </p>
-        </div>
-      </div>
       <p><br /></p>
       <div class="row">
         <div class="col-xs-12">
@@ -120,32 +91,49 @@
               target="_blank">Baidu Yun</a> (y67q) /<a
               href="https://drive.google.com/file/d/167ibsP99Gd28wLUywyyBg4SzoV4MTIp2/view?usp=sharing" target="_blank">
               Google Drive</a>🔥🔥🔥</p> -->
-          <p>&#128293&#128293&#128293 Codalab server for <a style="color: blue;" href="https://codalab.lisn.upsaclay.fr/competitions/10176">track1</a> and <a style="color:blue" href="https://codalab.lisn.upsaclay.fr/competitions/10177">track2</a> is online
+          <p>&#128293&#128293&#128293 Codalab server for <a style="color: blue;" href="https://codalab.lisn.upsaclay.fr/competitions/21688">track1</a> , <a style="color:blue" href="https://codalab.lisn.upsaclay.fr/competitions/21690">track2</a> and <a style="color: blue;" href="https://anti-uav.github.io/">track3</a> is online
             now!&#128293&#128293&#128293</p>
             <!-- <p>&#128293&#128293&#128293 The test-challenge is available now!&#128293&#128293&#128293</p> -->
-          <p>Coming soon!</p>  
         </div>
       </div>
       <p><br /></p>
+      <hr />
+      <p></p>
+      <div class="row">
+        <div class="col-xs-12">
+          <h2><b>Introduction</b></h2>
+          <p>
+            This year's challenge has three independent tracks:
+          </p>
+          <p>
+            <b>Track1: Single UAV Tracking.</b>
+            Given the bounding box of a drone target in the initial frame, this challenge track requires algorithms to track the given 
+            target in each video frame by predicting its bounding box. When the target disappears, an invisible mark (no bounding box) 
+            needs to be given.
+          </p>
+          <p>
+            <b>Track2: Single UAV Detection & Tracking.</b>
+            Whether a drone target exits in the initial frame is unknown. This challenge track requires algorithms to detect and track 
+            the drone target when it appears by predicting its bounding box. When the target does not exist or disappears, an invisible 
+            mark (no bounding box) needs to be given.
+          </p>
+          <p>
+            <b>Track3: Multiple UAV Tracking.</b>
+            Given the bounding boxes of the drone targets in the initial frame, this challenge track requires algorithms to detect 
+            and track both the initially provided and newly appeared drone targets in each subsequent video frame, 
+            by predicting their bounding boxes and unique IDs.
+          </p>
+        </div>
+      </div>
+      <hr />
 
       <div class="row">
         <div class="col-xs-12">
           <h2><b>Guideline for Challenge</b></h2>
           <ul list-style-type="circle">
             <li>
-              <p>The two tracks share a set of training data, but use two different sets of test data. The video in the test data of Track1 contains a drone target in the first frame;
-                the video in the training data and in the test data of Track2 may or may not contain a drone target in the first frame. 
-             </p>
-            </li>
-            <li>
               <p>
-                The two tracks use the same evaluation metric, as will be introduced below.
-              </p>
-            </li>
-            <li>
-              <p>
-                Two independent Codalab severs are used to evaluate and rank the submissions for Track1 and Track2, respectively. 
-                The Codalab severs and the test data for both tracks will be publicly accessible online after the testing phase begins on <b style="color:red">Mar 10 '25 06:00 PM PDT</b>.
+                Three independent Codalab severs are used to evaluate and rank the submissions for Track1, Track2 and Track3, respectively. 
               </p>
             </li>
             <li>
@@ -154,28 +142,25 @@
                 Please refer to the evaluation code and resulting output file to test your algorithm and prepare final submission (.zip) to Codalab server.
               </p>
             </li>
-            <li>
-              <img style="float:right;margin-left:15px;height:230px;" src="./2023wechat.jpg" />
-              <p>
-                The deadline for result submission is <b style="color:red">Mar 16 '25 06:00 PM PDT</b>.
-              </p>
-            </li>
+
+              <img style="float:right;margin-left:15px;height:230px;" src="./2025wechat.jpg" />
             <li>
               <p>If you encounter any questions or misunderstandings, please feel free to contact us: </p>
               <p><a href="mailto:tianyang.xu@jiangnan.edu.cn" style="color: blue;">tianyang.xu@jiangnan.edu.cn</a>,
               <p><a href="mailto:xuefeng.zhu@jiangnan.edu.cn" style="color: blue;">xuefeng.zhu@jiangnan.edu.cn</a>,</p>
-              <p><a href="mailto:lijianan@bit.edu.cn" style="color: blue;">lijianan@bit.edu.cn</a>.</p>
+              <!-- <p><a href="mailto:lijianan@bit.edu.cn" style="color: blue;">lijianan@bit.edu.cn</a>.</p> -->
               </p>
-              <p> We also set up a WeChat group and QQ group (277498917) for quick communication. </p>
+              <p> We also set up a WeChat group and QQ group (1025561717) for quick communication. </p>
             </li>
           </ul>
         </div>
       </div>
+      <hr />
 
       <p><br /></p>
       <div class="row" id="leaderboard">
         <div class="col-xs-12">
-          <h2><b>Participation requirements</b></h2>
+          <h2><b>Participation Requirements</b></h2>
           <ul list-style-type="circle">
             <li>
               <p> The provided test data is NOT allowed to be used for training.</p>
@@ -189,49 +174,9 @@
           </ul>
         </div>
       </div>
-      
-        <div class="row">
-          <div class="col-xs-12">
-            <h2><b>Evaluation Metrics</b></h2>
-            <p>MOTA (Multi-Object Tracking Accuracy) is a metric used to evaluate the overall performance of multi-object tracking algorithms. It combines factors like false positives, false negatives, and ID switches. The formula is:</p>
-            <p>MOTA = 1 - (FP + FN + IDS)/GT</p>
-            <ul>
-              <li>FP: False Positives</li>
-              <li>FN: False Negatives</li>
-              <li>IDS: ID Switches</li>
-              <li>GT: Ground Truth Objects</li>
-            </ul>
-            <p>MOTA ranges from 0 to 1, with higher values indicating better tracking accuracy. It is a comprehensive metric that reflects tracking performance by considering these errors.</p>
-          </div>
-        </div>
-      
-        <div class="row">
-          <div class="col-xs-12">
-            <h2><b>Contact</b></h2>
-            <p>Tianyang Xu<br>
-            <a href="mailto:tianyang.xu@jiangnan.edu.cn">tianyang.xu@jiangnan.edu.cn</a><br>
-            Jiangnan University</p>
-      
-            <p>Xuefeng Zhu<br>
-            <a href="mailto:xuefeng.zhu@jiangnan.edu.cn">xuefeng.zhu@jiangnan.edu.cn</a><br>
-            Jiangnan University</p>
-          </div>
-        </div>
+            
       
         <!-- Add other sections like Participation Requirements following similar structure -->
-      </div>
-      <p><br /></p>
-      <div class="row">
-        <div class="col-xs-12">
-          <h2><b>Award For Each Track</b></h2>
-          <p><img class='evaluateimg' src="./1st.svg" alt="">1st-Place: Certificate + 1500 USD</p>
-          <p><img class='evaluateimg' src="./2nd.svg" alt="">2nd-Place: Certificate + 1000 USD</p>
-          <p><img class='evaluateimg' src="./3rd.svg" alt="">3rd-Place: Certificate + 500 USD</p>
-          <h2><b>Award For Paper</b></h2>
-          <p><img class='evaluateimg' src="./best.svg" alt="">Best Paper: Certificate + 500 USD</p>
-        </div>
-      </div>
-      <p><br /></p>
 
       <!-- <div class="row">
         <div class="col-xs-12">
@@ -246,11 +191,12 @@
         </div>
       </div>
       <p><br /></p> -->
+      <hr />
 
       <div class="row">
         <div class="col-xs-12">
-          <h2><b>Metrics</b></h2>
-          <p>We define the tracking accuracy as:</p>
+          <h2><b>Evaluation Metrics</b></h2>
+          <p>We define the singel object tracking accuracy as:</p>
           <div
             style="border:2px solid #a1a1a1;padding:10px 40px;background:#d6ffd6; color:#000000; font-family: Consolas,Courier,monospace; ">
             <p></p>
@@ -263,10 +209,24 @@
             The <span style="font-weight:500">v<sub>t</sub></span> is the ground-truth visibility flag of the target, the indicator function <span style="font-weight:500">&delta;(v<sub>t</sub>>0)</span> 
             equals 1 when <span style="font-weight:500">v<sub>t</sub> > 0</span> and 0 otherwise. The accuracy is averaged over all frames in a sequence, <span style="font-weight:500">T</span> indicates 
             total frames and <span style="font-weight:500">T<sup>*</sup></span> denotes the number of frames corresponding to the presence of the target in the ground-truth.
+
+          <hr />
+          <p>MOTA (Multi-Object Tracking Accuracy) is a metric used to evaluate the overall performance of multi-object tracking algorithms. It combines factors like false positives, false negatives, and ID switches. The formula is:</p>
+            <p>MOTA = 1 - (FP + FN + IDS)/GT</p>
+            <ul>
+              <li>FP: False Positives</li>
+              <li>FN: False Negatives</li>
+              <li>IDS: ID Switches</li>
+              <li>GT: Ground Truth Objects</li>
+            </ul>
+            <p>MOTA ranges from 0 to 1, with higher values indicating better tracking accuracy. It is a comprehensive metric that reflects tracking performance by considering these errors.</p>
+
         </div>
       </div>
       <p><br /></p>
-      <div class="row">
+
+
+      <!-- <div class="row">
         <div class="col-xs-12">
           <h2><b>Results Format</b></h2>
           <p>For tracking with bounding boxes, please use the following format:</p>
@@ -284,29 +244,9 @@
           <p>Note: box coordinates are floats measured from the top left image corner (and are 0-indexed). An empty list denotes
           there is no target in the current frame.</p>
         </div>
-      </div>
+      </div> -->
       <p><br /></p>
-      <div class="row">
-        <div class="col-xs-12">
-          <h2><b>Dates</b></h2>
-          <p><b>Training dataset release:</b>
-            <!-- March 31st 2020 (24:00 CET - midnight) Extended -->
-            Feb 06 '23 06:00 PM PDT
-          </p>
-          <!-- <p><b>Supplementary Material Submission:</b> -->
-          <!-- March 31st 2020 (24:00 CET - midnight) Extended -->
-          <!-- 24th July
-          </p> -->
-          <p><b>Test dataset release:</b>
-            <!-- March 31st 2020 (24:00 CET - midnight) Extended -->
-            Mar 06 '23 06:00 PM PDT
-          </p>
-          <p><b>Results Submission:</b>
-            <!-- March 31st 2020 (24:00 CET - midnight) Extended -->
-            Mar 10 '23 through Mar 13 '23 06:00 PM PDT
-          </p>
-        </div>
-      </div>
+
       <!-- <div class="row">
         <div class="col-xs-12">
           <h2><b>Baseline and Evaluation Code</b></h2>
